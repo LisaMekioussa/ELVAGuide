@@ -1,0 +1,637 @@
+
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>ELVA Guide</title>
+      <!-- Custom styles for this template -->
+    
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&amp;display=swap" rel="stylesheet">
+      <link href="../css/style.css" rel="stylesheet">
+      <link href="css/privacy.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+      <link href="//db.onlinewebfonts.com/c/0fadaa21fcac88ceee0bb8da992c221b?family=SalesforceSans-Regular" rel="stylesheet" type="text/css"/> 
+      <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400&amp;display=swap" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&amp;display=swap" rel="stylesheet"> 
+    
+      <script type="text/javascript">
+            function selectAll(name, checkbox){
+                var items=document.getElementsByName(name);
+                var checkbox = document.getElementById(checkbox);
+                
+                for(var i=0; i<items.length; i++){
+                    if(items[i].type=='checkbox'){
+                        items[i].checked = checkbox.checked;
+                    } 
+                }
+            }
+ 
+        </script>
+        <script>
+            function toggleAll(val){
+                var items = document.getElementsByClassName('control');
+                for(var i=0; i<items.length; i++){
+                    if(items[i].type=='checkbox'){
+                        if(val == "true"){
+                            items[i].checked = true;
+                        } else {
+                            items[i].checked = false;
+                        }
+                        
+                    } 
+   
+                }
+            }
+        </script>
+
+    
+    </head>
+
+    <body>
+            
+    <div class = "container-fluid">
+        <div class = "row">
+            <div class = "col-2">
+                <div id = "sidebar-block"></div>
+
+            </div>
+            <div class = "col-10">
+                <div data-spy="scroll" data-target="#scrollspy" data-offset="0">
+
+                    <div style = "background-color: #68c59e1f;">
+                        <div style = "padding-top:40px; padding-bottom:40px; padding-left:150px;">
+                            <h1 class = " text-muted display-4"> Designing for Privacy</h1>
+                        </div>
+                            
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-9 ">
+                            <div style = "padding-left:150px; width:100%">
+                                <div class = "heading">
+                                    <p class= "leading text-muted">
+                                        User data has become a significant source of revenue for many platforms. It is very important to respect the integrity and privacy of user data by collecting it sparingly and giving the user
+                                        maximal flexibility with their cookie settings.
+                                    </p>
+                                    <div id = "banner">
+                                        <img  src="../images/privacy/banner.png" class=" img-fluid img-thumbnail" alt="UI Kit banner" style = " width:95%; height:40%">
+                                    </div>
+
+                                    <div id = "item-1" class = "group text-justify">
+                                        <div class = "header2">
+                                            <h2 style = "font-weight: 500"> Introduction </h2>
+                                        </div>
+                                        <p>
+                                            One of the most harrowing implications of malicious design interventions is that often, users are deceived into giving up their personal data. Many platforms such as Facebook and Amazon are built on an economics
+                                            of personal data, with much of their revenue coming from collecting and selling the data of its users. Included in this data are various analytics relating to site usage; duration of the site visit, activites performed while on the site
+                                            and any advertisements users engage with. Online advertisers use this data to predict the sorts of adverts you may be interested in seeing, and silently tailor your online experience to trigger maximal engagement.
+                                        </p>
+                                        <p>
+                                            Data collection however, is not limited to when users are on a particular site. HTTP cookies are small text files which are stored by web browsers - they were originally created as a means to store stateful information such as whether a user was logged on, or items in a shopping card, since the 
+                                            HTTP protocol is inherently stateless. Storing this information would allow websites to "remember" the user's state, avoiding the need for repeat logins over the course of a session, for example. The diagram below illustrates the basic function of a cookie -
+                                            a HTTP request is sent from the browser to a server, and the server responds with the requested content as well as a cookie, which gets stored by the browser. The browser may then make subsequent requests to the server, but it now has the information stored in the cookie, such as <code>logged-in = true</code>.
+                                        </p>
+
+
+                                        <img class = "img-thumbnail" style = "width: 100%; margin-bottom:20px; margin-top:20px; padding-top:5px; padding-bottom:20px;" src = "../images/privacy/cookie.png">
+                                        <P>
+                                            In more recent years, the phenomenon of <strong> third party tracking cookies </strong>has become prominent in discourse surrounding online privacy. The possible information stored by cookies has the potential to span far beyond the items in their cart - cookies can be used to 
+                                            compile long-term lists of the browsing histories of users, a privacy concern so serious that the European Union has enacted significant legislation on the matter. Privacy regulations such as GDPR require platforms to seek <strong> informed consent</strong> from their users before collecting their cookies, and while this 
+                                            has been successful in many contexts, malicious online providers are still finding ways to deceive users within the constraints of the law. Many dark patterns skirt the boundaries of the law, not being explicitly illegal, but being effective enough that they compromise the privacy of users. 
+                                        </P>
+                                        <P class ="lead">
+                                            In this chapter, key guidelines for maintaining the privacy of users will offered. All users have the right to privacy online, as to remove their privacy is to remove their autonomy, which is perhaps the most important value that must be protected when designing ethically.
+                                        </P>
+                                    </div>
+                                            
+
+                                    <div id = "item-2" class = "group text-justify">
+                                        <div class = "header2">
+                                            <h2 style = "font-weight: 500"> Data Collection Practices </h2>
+                                        </div>
+                                        <ol>
+                                            <li style = "font-weight: 300;font-size: 1.1em;">
+                                                <p class = "lead">
+                                                        Active, explicit consent must be given by the user for any data to be collected, including the use of functional, performance and advertising cookies - for instance, a consent popup, screen or alert must be presented to the user, which offers them a fair choice between maintaining privacy and sharing data. 
+                                                </p>
+                                            </li>
+                                            <p>
+                                                As seen in the chapter on autonomy, the concept of informed consent is particularly relevant to privacy. At every point, the user must have total freedom to relinquish their data; the principles of informed consent all apply to data collection.
+                                                Platforms must never covertly collect the data of users.
+                                            </p>
+                                        
+                                            <li style = "font-weight: 300;font-size: 1.1em;">
+                                                <p class = "lead">
+                                                    Any intervention, if designed to collect user data, must limit the data collected to the absolute minimum required for completion of the goal.
+                                                </p>
+                                            </li>
+                                        </ol>
+
+                                        <p>
+                                            If a piece of data is not essential to goal completion, relinquishing it must be optional for the user, and this must be made explicitly clear, with a marking on the field, for instance.
+                                        </p>
+                                        <!-- Form privacy example -->
+                                        <div class = "bd-example  d-flex justify-content-center" style = "margin-top:20px; ">
+                                            <form style = "width:80%; padding-top:10px; padding-bottom:10px;">
+                                                    <p class ="text-muted"> The fields marked with an askterisk are mandatory</p>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <label for="inputEmail4">First Name(s) <strong>*</strong></label>
+                                                            
+                                                            <input class="form-control" id="inputEmail4" placeholder="First Name">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="inputPassword4">Surname<strong> *</strong></label>
+                                                            <input class="form-control" id="inputPassword4" placeholder="Surname">
+                                                        </div>
+                                                    </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">Email address<strong> *</strong></label>
+                                                    <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                                                    
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword1">Phone Number</label>
+                                                    <input class="form-control" id="exampleInputPassword1" placeholder="Phone Number">
+                                                </div>
+                                            </form>
+                                        
+                                        </div>
+                                        <div style = "border-radius:3px; padding-top:5px; margin-bottom:20px;" class = " bg-light d-flex justify-content-center">
+                                            <p style = "font-weight:200; width:80%;" >
+                                                The above example shows an input form with the necessary fields marked with an asterisk. The user is able to clearly see that entering their phone number is optional, allowing them to make an informed decision to relinquish it or not.
+                                            </p>
+                                        </div>
+                                        <p>
+                                            If data must be collected and the reason for doing so is not intuitive to the user, they should be informed of why it is necessary for them to relinquish this data.
+                                        </p>
+                                    </div>
+                                        <hr>
+                                        <div id = "item-3" class = "group text-justify">
+                                            <div class = "header2">
+                                                    <h2 style = "font-weight: 500"> Privacy Settings Management </h2>
+                                            </div>
+                                            <ol>
+                                                <li style = "font-weight: 300;font-size: 1.1em;">
+                                                    <p class = "lead">
+                                                            Where possible default settings should maximise privacy. 
+                                                    </p>
+                                                </li>
+                                            <p>
+                                                As discussed in the previous chapters on user autonomy and application of psychological insight, it is very important to leverage defaults in such a way that does not compromise the privacy of users. Options to relinquish data, whether it be non-essential cookies or any other information must be <strong>opt-in always.</strong>
+                                            </p>
+                                            <div class = "row" style = "padding-bottom:20px;">
+                                                <div class = "col-6">
+                                                    <div class="card" >
+                                                        <div class = "card-body">
+                                                            <h4> Adjust your cookie settings</h4>
+                                                            <hr>
+                                                            <form>
+                                                                <div style = "margin-bottom:10px;" class="custom-control custom-switch">
+                                                                    <input type="checkbox" class=" checkbox-ad custom-control-input" disabled id="customSwitch2">
+                                                                    <label class="custom-control-label" for="customSwitch2">Session Cookies (necessary for site performance)
+                                                                        
+                                                                    </label>
+                                                                </div>
+
+                                                                <div style = "margin-bottom:10px;"  class="custom-control custom-switch">
+                                                                    <input type="checkbox" class="custom-control-input" id="customSwitch3" checked>
+                                                                    <label class="custom-control-label" for="customSwitch3">Performance Cookies</label>
+                                                                </div>
+                                                                <div style = "margin-bottom:10px;" class="custom-control custom-switch">
+                                                                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                                                        <label class="custom-control-label" for="customSwitch1">Advertising Cookies</label>
+                                                                </div>
+                                                                <div style = "margin-bottom:10px;" class="custom-control custom-switch">
+                                                                        <input type="checkbox" class="custom-control-input" id="customSwitch4">
+                                                                        <label class="custom-control-label" for="customSwitch4">Third Party Cookies</label>
+                                                                </div>
+
+                                                            </form>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div style = "padding-top: 20px; padding-bottom:10px; border-bottom-style:solid; border-radius:5px; border-width:5px; border-color:rgb(17, 173, 82);" class = " bottom-caption bg-light">
+                                                        <p class= "text-success">
+                                                                &nbsp; Do.
+                                                        </p> 
+                                                    </div>
+                                                </div>
+
+                                                <div class = "col-6">
+                                                    <div class="card" >
+                                                        <div class="card-body">
+                                                            <h4> Adjust your cookie settings</h4>
+                                                            <hr>
+                                                                <form>
+                                                                    <div style = "margin-bottom:10px;" class="custom-control custom-switch">
+                                                                        <input type="checkbox" class="custom-control-input" disabled id="customSwitch5">
+                                                                        <label class="custom-control-label" for="customSwitch5">Session Cookies (necessary for site performance)
+                                                                            
+                                                                        </label>
+                                                                    </div>
+
+                                                                    <div style = "margin-bottom:10px;"  class="custom-control custom-switch">
+                                                                        <input type="checkbox" class="custom-control-input" id="customSwitch6" checked>
+                                                                        <label class="custom-control-label" for="customSwitch6">Performance Cookies</label>
+                                                                    </div>
+                                                                    <div style = "margin-bottom:10px;" class="custom-control custom-switch">
+                                                                            <input type="checkbox" class="custom-control-input" id="customSwitch7" checked>
+                                                                            <label class="custom-control-label" for="customSwitch7">Advertising Cookies</label>
+                                                                    </div>
+                                                                    <div style = "margin-bottom:10px;" class="custom-control custom-switch">
+                                                                            <input type="checkbox" class="custom-control-input" id="customSwitch8" checked>
+                                                                            <label class="custom-control-label" for="customSwitch8">Third Party Cookies</label>
+                                                                    </div>
+
+                                                                </form>
+                                                        </div>
+                                                    </div>
+                                                    <div style = "padding-top: 20px; padding-bottom:10px; border-bottom-style:solid; border-radius:5px; border-width:5px; border-color:rgb(173, 17, 17);" class = " bottom-caption bg-light">
+                                                        <p class= "text-danger">
+                                                                &nbsp; Don't.
+                                                        </p> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                If advertising and performance cookies are absolutely required by the platform, they may be turned on by default, but users must be informed of this alongside the reason why (see the use of popovers above), and given a clear opportunity to opt out.
+                                            </p>
+
+                                            <li style = "font-weight: 300;font-size: 1.1em;">
+                                                <p class = "lead">Users must be provided with a straightforward, easily locatable method for changing their privacy settings. This must be accessible from every page on the site at all points. 
+                                                    </p>
+                                            </li>
+                                            </ol>
+                                            <p>
+                                                Interventions must not intend to or succeed in making it more difficult for users to locate and change their privacy settings, including the ability to opt-out of all non-essential cookies. Websites should have a dedicated page or dialog for security settings which is accessible via a link or icon on the site's main navigational menu, or some other prominent part of the webpage. In this case,
+                                                "prominent" refers to an element that is on the same level of the visual hierarchy as other navigational links, and viewable without the user having to scroll down the page (i.e. not in the footer).
+                                            </p>
+                                            <h3 id = "item-31">
+                                                Cookie Consent
+                                            </h3>
+                                        
+                                            <p>
+                                                While intrusive popups are arguably poor UX, a popup is necessary for ensuring the user's initial consent to cookie collection. This initial popup should be simplistic, occupy no more than 55% of the viewport and offer users a brief explanation of the cookies used on the site. Ideally, this display should either be a center-screen popup or a sidebar, as banners at the bottom of the page risk going unnoticed by the user. The popup should contain three
+                                                major content sections:
+                                            </p>
+                                            <ol>
+                                                <li><strong>A heading section:</strong> This section should contain an attention-grabbing title, ideally of size <code>.h1</code> or <code>.h2</code>. It should also involve a <code>.p</code> block level description of how cookies are used by the platform. This description should be brief, and not exceed a few sentences. </li>
+                                                <li><strong>A settings management section:</strong> This section should contain a <code>.h2</code> or <code>.h3</code> level call to action, e.g. <em>"Manage your cookie settings here."</em> Below this should be a set of toggle switches or checkboxes, one for each type of cookie stored. Each switch for the cookie types should be the header of a <strong>drop down accordion</strong>, which when toggled, displays toggle switches for each individual cookie. The top-level visible switch should control the settings for every cookie contained in this accordion.
+                                                <li><strong> An actions section: </strong> This section should contain a link to the more detailed privacy center, ideally placed in the far left of the viewport. On the right, should be an inline button group which contains a reject all and accept all button.</li> 
+                                            </ol>
+
+
+                                            <p style = "margin-top:20px;" class = "lead">Conceptually this design intends to embody flexibility and transparency, by visualising user's cookie settings and offering them a simple and flexible way to tailor their settings. An example of such a popup is designed below. </p>
+
+                                            <div style = "width:100%;font-family:'Roboto'; margin-top:40px;">
+                                                <!-- COOKIE POLICY -->
+                                                <div style  = "padding-left: 40px; padding-right:40px;" class = "d-none d-lg-block bd-example">
+                                                    <div style = "padding-top:20px; padding-bottom:20px; width:95%; margin-left:1rem;" class = "text-justify center-heading">
+                                                            <h1> We use cookies</h1>
+                                                            <p>This site uses cookies to provide essential functionality such as remembering your shopping cart and collect anonymised data about your usage of the site. Read more about the types of cookies we collect and how we handle your data in our privacy policy.</p>
+                                                            <a href = ""> <u>View our privacy policy</u></a>
+                                                    </div>
+                                                    <div>
+                                                        <div>
+                                                        <!-- accordion 1 !-->
+                                                            <div style = "margin-bottom:20px;" id="accordion">
+                                                                <div class="card">
+                                                                    <div class="card-header" id="headingThree" style = "background-color:white">
+                                                                        <div class = "annotations  d-flex flex-row align-items-center justify-items-start">
+                                                                            <div class =" d-flex p-2">
+                                                                                <form>
+                                                                                    <div style = "margin-bottom:15px;" class="custom-control-lg custom-control custom-checkbox">
+                                                                                            <input class="custom-control-input" id="checkbox-large-nec" type="checkbox" checked disabled/>
+                                                                                            <label class="custom-control-label" for="checkbox-large-nec"></label>
+                                                                                        </div>
+                                                                                </form>
+                                                                            </div>   
+                                                                            <div style = "width:90%;" class ="d-flex p-2">
+                                                                            <p style = "font-size:20pt; font-weight:400;" class = "lead">Strictly Necessary Cookies</p>
+                                                                            </div>     
+
+                                                                        </div>
+                                                                        <div style = "width:90%;" class = "d-flex flex-row align-items-center">
+                                                                                <p class= "annotations"> These are session cookies which are necessary for core site functionality, such as accessing secure parts of the website and remembering items in your cart. </p>
+                                                                        </div>
+                                                                        <div class="d-flex justify-content-end btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                                                <i class="fas fa-chevron-down " style = "color: rgb(189, 197, 209);"></i>
+                                                                        </div>                                                          
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                    
+                                                            <div id="collapseOne" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                                                <div class="card-body annotations">
+                                                                    <p>These cookies should not be disabled, as they are required for the core functionality of the site. If necessary, you may disable them via your browser settings.</p>
+                                                                    <hr>
+                                                                    
+                                                                    <div style = "margin-left:50px;" class = "d-flex flex-column switches">
+                                                                            <div style = "margin-bottom:10px;"  class=" p-2 custom-control custom-switch">
+                                                                                    <input name = "necessary"  type="checkbox" class="disabled p-2 custom-control-input" id="nec1" checked disabled>
+                                                                                    <label class="custom-control-label" for="nec1">Vendor 1</label>
+                                                                            </div>
+                                                                            <div style = "margin-bottom:10px;" class="p-2 custom-control custom-switch">
+                                                                                        <input name = "necessary"  type="checkbox" class="disabled custom-control-input" id="nec2" checked disabled>
+                                                                                        <label class="custom-control-label" for="nec2">Vendor 2</label>
+                                                                            </div>
+                                                                            <div style = "margin-bottom:10px;" class="p-2 custom-control custom-switch">
+                                                                                        <input name = "necessary"  type="checkbox" class="disabled custom-control-input" id="nec3" checked disabled>
+                                                                                        <label class="custom-control-label" for="nec3">Vendor 3</label>
+                                                                            </div>
+                                                                            <div style = "margin-bottom:10px;" class="p-2 custom-control custom-switch">
+                                                                                    <input name = "necessary" type="checkbox" class="disabled custom-control-input" id="nec4" checked disabled>
+                                                                                    <label class="custom-control-label" for="nec4">Vendor 4</label>
+                                                                            </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                        
+                                                            <!--accordion2!-->
+                                                            <div id="accordion" style = "margin-bottom:20px;">
+                                                                <div class="card">
+                                                                    <div style = "background-color:white;" class = "card-header" id="headingThree">
+                                                                        <div class = "annotations  d-flex flex-row align-items-center justify-items-start">
+                                                                                <div class =" d-flex p-2">
+                                                                                    <form>
+                                                                                        <div style = "margin-bottom:15px;" class="custom-control-lg custom-control custom-checkbox">
+                                                                                                <input onclick="selectAll('perfbox', 'checkbox-large-perf')" class="custom-control-input control" id="checkbox-large-perf" type="checkbox" checked/>
+                                                                                                <label class="custom-control-label" for="checkbox-large-perf"></label>
+                                                                                            </div>
+                                                                                    </form>
+                                                                                </div>   
+                                                                                <div style = "width:90%;" class ="d-flex p-2">
+                                                                                <p style = "font-size:20pt; font-weight:400;" class = "lead">Performance Cookies</p>
+                                                                                </div>     
+
+                                                                        </div>
+                                                                        <div style = "width:90%;" class = "d-flex flex-row align-items-center">
+                                                                                <p class= "annotations"> These cookies collect site usage analytics such as response rates and errors so we can continuously improve the website for you. Performance cookies also store your site preferences. </p>
+                                                                        </div>
+                                                                        <div class="d-flex justify-content-end btn" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                                                <i class="fas fa-chevron-down" style = "color: rgb(189, 197, 209);"></i>
+                                                                        </div>                                                      
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                        
+                                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                                                <div class="card-body annotations">
+                                                                    <p> 
+                                                                        Includes information about your use of the content, and combination with previously collected information, used to measure, understand, and report on your usage of the service.
+                                                                        Also includes information about your preferences, including your privacy settings.
+                                                                    </p>
+                                                                    <hr>
+                                                                        
+                                                                    <div style = "margin-left:50px;" class = "d-flex flex-column switches">
+                                                                            <div style = "margin-bottom:10px;"  class=" p-2 custom-control custom-switch">
+                                                                                    <input name = "perfbox"  type="checkbox" class="p-2 control custom-control-input" id="perf1" checked>
+                                                                                    <label class="custom-control-label" for="perf1">Vendor 1</label>
+                                                                            </div>
+                                                                            <div style = "margin-bottom:10px;" class="p-2 custom-control custom-switch">
+                                                                                        <input name = "perfbox"  type="checkbox" class="control custom-control-input" id="perf2" checked>
+                                                                                        <label class="custom-control-label" for="perf2">Vendor 2</label>
+                                                                            </div>
+                                                                            <div style = "margin-bottom:10px;" class="p-2 custom-control custom-switch">
+                                                                                        <input name = "perfbox"  type="checkbox" class="control custom-control-input" id="perf3" checked>
+                                                                                        <label class="custom-control-label" for="perf3">Vendor 3</label>
+                                                                            </div>
+                                                                            <div style = "margin-bottom:10px;" class="p-2 custom-control custom-switch">
+                                                                                    <input name = "perfbox" type="checkbox" class="control custom-control-input" id="perf4" checked> 
+                                                                                    <label class="custom-control-label" for="perf4">Vendor 4</label>
+                                                                            </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                        
+
+                                                            <!-- accordion 3 !-->
+
+                                                            <div id="accordion">
+                                                                <div class="card">
+                                                                    <div style = "background-color:white;" class="card-header" id="headingThree">
+                                                                        <div class = "annotations  d-flex flex-row align-items-center justify-items-start">
+                                                                            <div class =" d-flex p-2">
+                                                                                <form>
+                                                                                    <div style = "margin-bottom:15px;" class="custom-control-lg custom-control custom-checkbox">
+                                                                                            <input onclick="selectAll('adbox', 'checkbox-large-ad')" class="control custom-control-input checkbox-ad" id="checkbox-large-ad" type="checkbox"/>
+                                                                                            <label class="custom-control-label" for="checkbox-large-ad"></label>
+                                                                                        </div>
+                                                                                </form>
+                                                                            </div>   
+                                                                            <div style = "width:90%;" class ="d-flex p-2">
+                                                                                <p style = "font-size:20pt; font-weight:400;" class = "lead">Advertising Cookies</p>
+                                                                            </div>     
+                                                                        </div>
+                                                                            <div style = "width:90%;" class = "d-flex flex-row align-items-center">
+                                                                                    <p class= "annotations"> These cookies are used to personalise the ads shown to you, and collect information such as your browsing history while on this site and any ads you click on. </p>
+                                                                            </div>
+                                                                            <div class="d-flex justify-content-end btn" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                                                    <i class="fas fa-chevron-down " style = "color: rgb(189, 197, 209);"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                </div>
+                                                            </div>
+                                                                
+                                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                                                <div class="card-body annotations">
+                                                                    <p>Includes using previously collected information about your interests to select ads, processing data about what advertisements were shown, how often they were shown, when and where they were shown, and whether you took any action related to the advertisement, including for example clicking an ad or making a purchase.</p>
+                                                                    <hr>
+                                                                    
+                                                                    <div style = "margin-left:50px;" class = "d-flex flex-column switches">
+                                                                            <div style = "margin-bottom:10px;"  class=" p-2 custom-control custom-switch">
+                                                                                    <input name = "adbox"  type="checkbox" class="p-2 control custom-control-input" id="ad1">
+                                                                                    <label class="custom-control-label" for="ad1">Vendor 1</label>
+                                                                            </div>
+                                                                            <div style = "margin-bottom:10px;" class="p-2 custom-control custom-switch">
+                                                                                        <input name = 'adbox'  type="checkbox" class="control custom-control-input" id="ad2">
+                                                                                        <label class="custom-control-label" for="ad2">Vendor 2</label>
+                                                                            </div>
+                                                                            <div style = "margin-bottom:10px;" class="p-2 custom-control custom-switch">
+                                                                                        <input name = 'adbox'  type="checkbox" class="control custom-control-input" id="ad3">
+                                                                                        <label class="custom-control-label" for="ad3">Vendor 3</label>
+                                                                            </div>
+                                                                            <div style = "margin-bottom:10px;" class="p-2 custom-control custom-switch">
+                                                                                    <input name = 'adbox' type="checkbox" class="control custom-control-input" id="ad4">
+                                                                                    <label class="custom-control-label" for="ad4">Vendor 4</label>
+                                                                            </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div style = " font-weight: 600; margin-top:20px;" class = "d-flex justify-content-around">
+                                                            
+                                                                <div class="p-2 btn-group">
+                                                                        <button type="button" style = "width:200px; margin-left:10px;" class=" btn-primary btn">Save and Exit</button>
+                                                                </div>
+                                                                <div style = "margin-left:18rem;">
+                                                                        
+                                                                    <div class="p-2 btn-group">
+                                                                        <button onclick = "toggleAll('true')" type="button" style = "width:150px;" class="btn  btn-success">Accept All</button>
+
+                                                                    </div>      
+                                                                    <div class="p-2 btn-group">
+                                                                            <button  onclick = "toggleAll('false')" type="button" style = "width:150px;" class="btn   btn-danger">Reject all</button>
+                        
+                                                                    </div> 
+                                                                </div>  
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                                                    
+                                                <div style = "border-radius:3px; padding-top:5px; margin-bottom:50px;" class = " bg-light d-flex justify-content-center">
+                                                        <ul class= " example-content">
+                                                                <li>Users are presented with quick options for both accepting and rejecting all cookies. Both buttons are equal in size and prominence on the page and are intuitively coloured.</li>
+                                                                <li>As well as being able to quickly accept or reject all cookies, users are offered granularity and can tailor exactly which cookies to accept should they wish.</li>
+                                                                <li>Settings are grouped logically, with each type of cookie given its own dedicated dropdown.</li>
+                                                                <li>Each type of cookie, its purpose and the type of data it stores is provided in <strong>plain english</strong>, such that all users can understand it.</li>
+                                                        </ul>
+                                                </div>
+                                            </div>
+
+
+                                                
+                                            <hr>
+
+                                            <div id = "item-4" class = "group text-justify">
+                                                <div class = "header2">
+                                                    <h2 style = "font-weight: 500"> Privacy Documentation </h2>
+                                                </div>
+
+                                                <p class= "lead">
+                                                    The platform must contain documentation on their use of cookies and data collection practices, and should have a terms of use that is displayed to users on the site in at least the following contexts:
+                                                    in the site footer on every page, on any dialogs for adjusting privacy/cookie settings, and wherever the user must relinquish <strong>new data</strong> via a form (e.g. sign-up, checkout).
+                                                </p>
+
+                                                <p>Any documentation provided on the site should implement the following properties:</p>
+                                                <ul style = "margin-top:10px; margin-bottom:10px;" class= " example-content">
+                                                        <li>Clear language, free of jargon and overly technical terminology. The phrasing should be tailored such that a child or young teenager could understand it.</li>
+                                                        <li>On desktop displays, the information should be limited to <strong>two or three screenfuls</strong> of information if possible, to avoid users having to scroll excessively. If this is not possible, the page should have a fixed navigation bar or scrollspy, to allow users to navigate between sections of content quickly.</li>
+                                                        <li>Information should be grouped logically, and separated with <code>.h1</code> and <code>.h2</code> level headers, using bullet points where possible - see guidance on designing for System 1 processing.</li>
+                                                        <li>Information should be accurate, up-to-date and independently verifibable. Phrasing must not be deliberately misleading, and cookie types must be described correctly - e.g. referring to advertising cookies as performance cookies is deliberately misleading.</li>
+                                                    </ul>
+                                                <p>
+                                                    As seen in the example of a cookie consent dialog above, a clear link to view the platform's privacy policy is given. A text link is sufficient for this purpose, provided it is on its own line, separated from any prose text. Ideally, it should be 
+                                                    enclosed in its own <code>.p</code> tag. The example below shows how privacy policies may be linked on forms, with an affirmative checkbox.
+                                                </p>
+                                                <div class = "bd-example  d-flex justify-content-center" style = "margin-top:40px; margin-bottom:40px; ">
+                                                    <form style = "width:80%; padding-top:10px; padding-bottom:10px;">
+
+                                                            <div class="form-group">
+                                                            <label for="inputAddress2">Password <strong>*</strong></label>
+                                                            <input type="password" class="form-control" id="inputAddress2" placeholder="Password">
+                                                            </div>
+                                                        <div class="form-group">
+                                                            <label for="inputAddress2">Confirm Password <strong>*</strong></label>
+                                                            <input type="password" class="form-control" id="inputAddress2" placeholder="Confirm Password">
+                                                        </div>
+                                                        <div style = "padding-bottom:10px; padding-top:10px;" class="form-group">
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                                <label class="custom-control-label" for="customCheck1">I agree to the platform's <span><a href = "">privacy policy</a></span></label>
+                                                            </div>
+                                                        </div>
+                                                        <button class="btn btn-block btn-primary">Sign Me Up</button>
+                                                    </form>
+                                                </div>
+
+                                                <h3 id = "item-41">
+                                                    Privacy Policy Content
+                                                </h3>
+                                                <p class = "lead">
+                                                    Platform privacy policies must contain at least, the following information on the data stored by the website:
+                                                </p>
+
+                                                <ul>
+
+                                                    <li>
+                                                        The type of data collected by the platform.
+                                                    </li>
+                                                    <li>
+                                                        How this data is collected.
+                                                    </li>
+                                                    <li>
+                                                        How long this data is kept for, and how it is stored.
+                                                    </li>
+                                                    <li>
+                                                        The steps a user can take to view, update or remove their data.
+                                                    </li>
+                                
+                                                </ul>
+                                                    
+                                                    <p class = "lead"> The cookies policy must contain at a minimum, the following information on every type of cookie stored by the site:</p>
+                                                        
+                                                        <ul>
+                                                            <li>
+                                                                The name and provider of the cookie.
+                                                            </li>
+                                                            <li>
+                                                                The purpose of the cookie.
+                                                            </li>
+                                                            <li>
+                                                                The type of data collected by the cookie.
+                                                            </li>
+                                                            <li>
+                                                                The lifetime of the cookie (the length of time before it expires.)
+                                                            </li>
+                                                        </ul>
+
+                                                    <p> It is recommended that this information is provided in a tabular format for ease of reading, as shown below:</p>
+
+                                                    <img style = "width:100%; padding-top:20px;" src= "../images/privacy/cookiepolicy.PNG">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "col-3">                      
+                                    <div id = "scrollspy"  style = "position:fixed; width:85%;">
+                                        <div class= "p-2" style = "margin-left:50px; font-size:12pt;">
+                                            <ol style = "list-style:none;" class = "example-content list-eg">
+                                                <li><a class= "text-muted" href = "#item-1">Introduction</a></li>
+                                                <li><a class= "text-muted" href = "#item-2">Data Collection Practices</a></li>
+                                                <li>
+                                                    <a class= "text-muted" href = "#item-3">Privacy Settings Management</a>
+                                                    <ol class = "example-content list-eg">
+                                                            <li style = "width:200px;"><a class= "text-muted" href = "#item-31">Cookie Consent</a></li>
+                                                           
+                                                    </ol>
+                                                </li>
+                                                <li>
+                                                    <a class= "text-muted" href = "#item-4">Privacy Documentation</a>
+                                                    <ol class = "example-content list-eg">
+                                                        <li style = "width:200px;"><a class= "text-muted" href = "#item-41">Privacy Policy Content</a></li>
+                                                        
+                                                    </ol>
+                                                </li>
+                                        
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $("#sidebar-block").load("../sidebar.html");
+        
+        </script>
+
+    </body>
+    
+    </html>
+    

@@ -1,0 +1,283 @@
+
+  .example{
+    background-color: #68c59e1f;
+    border-radius:5px;
+    border-color: #2141331f;
+    border-style: solid;
+    margin-bottom:20px;
+
+}
+.bd-example{
+    padding-top:10px;
+    padding-bottom:10px;
+    border-style:solid;
+    border-color: #f7f7f9;
+    
+}
+.code{
+    background-color: #f7f7f9;
+}
+.col-2,.col-10{
+  padding-left:0px;
+  padding-right:0px;
+}
+
+.col-3{
+  padding-right:0px;
+}
+.list-eg{
+    
+    border-radius:1px;
+    border-color: #2141331f;
+    border-style: solid;
+    border-width: 5px;
+    margin-bottom:10px;
+    margin-top:10px;
+    border-top: none;
+    border-bottom: none;
+    border-right:none;
+}
+
+.example-content{
+    font-weight:100;
+    padding-left:15px;
+    width:90%;
+}
+
+
+
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+  z-index:2;
+  color:#68c59e;
+  background-color:white;
+
+  border-color: rgba(0,0,0,.125);
+  border-left-color: #68c59e;
+  border-left-width:5px;
+} 
+
+.list-group-item{
+  background-color: #f8f9fa
+  
+}
+
+.leading{
+    font-size: 1.6rem;
+    font-weight:100;
+    padding-top: 50px;
+}
+
+.leader{
+    font-size: 1.6rem;
+    font-weight:100;
+}
+
+p{
+    font-size:12pt;
+    color: rgb(70, 72, 73);
+    font-family:'Roboto';
+    
+    
+}
+
+ul, ol{
+    color:rgb(70, 72, 73);
+    padding-top:10px;
+    padding-bottom:10px;
+    
+}
+.table-fill{
+    background-color:#68c59e1f;
+}
+.annotations{
+    font-weight: 100;
+}
+
+.group{
+    
+    padding-bottom:20px; padding-top:20px;
+}
+
+.header2{
+    font-weight:500;
+    padding-bottom:25px;
+    font-family: 'Roboto';
+    color: #3d4246;
+  
+}
+#inline-image{
+    padding-bottom:30px;
+    padding-top:30px; 
+    width:95%;
+    height:auto;
+}
+
+#banner{
+    
+    padding-top:40px;
+    padding-bottom:40px;
+}
+h3{
+    padding-top:30px;
+    padding-bottom:30px;
+    font-family: 'Roboto';
+    font-weight:300;
+    color:#6c7d74;
+    
+}
+.card-link:hover {
+background-color: #68c59e1f;
+}
+
+ol {
+  list-style-type: none;
+  counter-reset: item;
+  margin: 0;
+  padding: 0;
+  font-family:'Roboto', sans-serif;
+  
+}
+
+ol > li {
+  display: table;
+  counter-increment: item;
+  margin-bottom: 0.3em;
+}
+
+ol > li:before {
+  content: counters(item, ".") ". ";
+  display: table-cell;
+  padding-right: 0.6em;    
+}
+
+li ol > li {
+  margin: 0;
+}
+
+li ol > li:before {
+  content: counters(item, ".") " ";
+}
+
+
+
+.logo{
+  font-family:'Roboto', sans-serif;
+  font-weight: "lighter";
+}
+
+.body-heading{
+  padding-top:20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.body-main{
+  padding-top:20px;
+}
+
+ p, ul, ol {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li {
+  margin: 0.2em 0;
+}
+
+.danger-alert{
+  border-style:solid;
+  border-left-color: rgb(173, 17, 17);
+  border-left-width: thick;
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
+  border-radius: 3px;
+  background-color: #f7f7f9;
+  margin-top:30px;
+  margin-bottom:35px;
+}
+.component-alert{
+  border-style:solid;
+  border-left-color: #563d7c;
+  border-left-width: thick;
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
+  border-radius: 3px;
+  background-color: #f7f7f9;
+  margin-top:30px;
+  margin-bottom:35px;
+}
+
+.info-alert{
+  border-style:solid;
+  border-left-color: rgb(56, 132, 255);
+  border-left-width: thick;
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
+  border-radius: 3px;
+  background-color: #f7f9f7;
+  margin-top:30px;
+  margin-bottom:35px;
+ 
+}
+
+
+.advice-alert{
+  border-style:solid;
+  border-left-color: #fcde4c;;
+  border-left-width: thick;
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
+  border-radius: 3px;
+  background-color: #f7f7f9;
+  margin-top:30px;
+  margin-bottom:35px;
+}
+
+.para {
+  width:75%;
+}
+
+.a.card:hover {
+  background-color: #68c59e1f;
+}
+
+.flexbox{
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:10px;
+  
+}
+
+
+
+.body-block{
+  padding-top:20px;
+  padding-bottom:15px; 
+}
+
+.sublist{
+  padding-top:10px;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+  width: 500px;
+}
+
+.image-good{
+  border-style:solid;
+  border-top-width: 10px;
+  border-top-color: rgb(15, 71, 8);
+  border-bottom: none;
+  border-right: none;
+  border-left:none;
+  padding-bottom:20px;
+}
+
+.sidebar-text{
+  font-family:'Roboto';
+}
+

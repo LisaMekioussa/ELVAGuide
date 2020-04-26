@@ -1,0 +1,742 @@
+
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>ELVA Guide</title>
+      <!-- Custom styles for this template -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&amp;display=swap" rel="stylesheet">
+ 
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+      <link href="//db.onlinewebfonts.com/c/0fadaa21fcac88ceee0bb8da992c221b?family=SalesforceSans-Regular" rel="stylesheet" type="text/css"/> 
+      <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400&amp;display=swap" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&amp;display=swap" rel="stylesheet"> 
+
+      <link href="../css/style.css" rel="stylesheet">
+    </head>
+    
+    <body>
+    <style>
+        .timer-head{
+           font-size:4rem;
+           font-weight:700;
+           text-shadow: 0.5px 0.5px #00000062;
+           color: white;
+        }    
+        .timer-content{
+            background-color: #1fc8db;
+            color: white;
+            background-image: linear-gradient(141deg, #5491b2 0%, #4f9caf 51%, #49b4b1 75%);
+        }
+
+        .timer-label{
+            font-size:1.5rem;
+            font-family: 'Roboto';
+        }
+    </style>
+    
+    <div class = "container-fluid">
+        <div class = "row">
+            <div class = "col-2">
+                <div id = "sidebar-block"></div>
+            </div>
+            <!-- MAIN BODY -->
+            <div class = "col-10">
+                <div data-spy="scroll" data-target="#scrollspy" data-offset="0">
+                    <div style = "background-color: #68c59e1f;">
+                        <div style = "padding-top:40px; padding-bottom:40px; padding-left:150px;">
+                            <h1 class = " text-muted display-4"> Application of Psychological Insight</h1>
+                        </div>
+                            
+                    </div>
+                    <div>
+                        <div class = "row">
+                            <div class = "col-9">
+                                <div style = "width:100%; padding-left:150px;">
+                                    <div class = "heading">
+                                        <p class= "leading text-muted">
+                                            When designing with user cognition and perception in mind, it is vital to use psychological insight honestly and with the goal of helping or passively persuasing the user,
+                                            rather than exploiting their cognitive biases for the gain of the platform.
+                                        </p>
+                                        <div id = "banner">
+                                            <img  src="../images/psych/banner.png" class=" img-fluid img-thumbnail" alt="UI Kit banner" style = " width:95%; height:40%">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class = "group ">
+                                        <div id = "item-1" class = "header2">
+                                            <h2 style = "font-weight: 500"> Introduction </h2>
+                                        </div>
+                                        <p class = "text-justify">
+                                            The relationship between cognitive psychology and interaction design is longstanding. Designing effective, engaging interfaces requires an in depth understanding of the human mind, 
+                                            making psychological insight the most powerful weapon in any designer's arsenal.
+                                        </p>
+                                        <p class = "text-justify">
+                                            <em>Application of psychological insight</em> can be briefly summarised as as designing a feature that exploits some known psychological property, often with the aim of eliciting some response or behaviour from the user. 
+                                            The process of applying psychological insight has three main constituents: the desired outcome (for instance, convincing a user to choose one option over another), the psychological or perceptive property itself and the specific way in which this property informs a design decision.
+                                        </p>
+                                        <h3 id = "item-11" style = "font-weight:300;">A Simple Example</h3>
+                                        <p class = "text-justify"> A common goal of UX designers is to convey information to web users such that it sticks and motivates them to make decisions. This, therefore is the <strong>intended outcome</strong>. Now, we possess a number of psychological quirks that affect the absorption and retention of information delivered to us online. 
+                                            The most famous example, uncovered in a study conducted by the Nielsen Normal group, is that <em>people do not read, they skim content.</em> It can therefore be deduced that important information, if buried in a block of text will likely not be picked up by the user, making this the <strong> psychological property exploited by the design.</strong>
+                                            As such, the designer may decide to present textual information briefly and concisely, using bullet points and an increased font size to draw attention to important points. 
+                                        </p>
+
+                                        <p class = "text-justify"> In this case, the psychological insight is applied <strong> honestly.</strong> It is applied to aid rapid comprehension of the text and will likely result in the user finding the information they need more quickly. However, it is also possible to use psychological properties to deceive the user, or to hide important
+                                            information from them, as many dark patterns do. In this case, if a designer wished to hide certain stipulations from the user, which if perceived, would affect their decision to buy a product, it would be easy to do this. The designer would simply deliver the information as dense prose text and bury the stipulations in a paragraph, making the likelihood of the user
+                                            reading it very low. In this case, application of psychological insight is applied <strong>deceptively.</strong>
+                                        </p>
+
+                                        <div style = "padding-top:20px; padding-bottom:20px;">
+                                            <table class="table table-bordered ">
+                                                <caption>Examples adapted from Harry Brignull's article on dark patterns.</caption>
+                                                <thead>
+                                                    <tr>
+                                                        <th class = "border-bottom-0" style = " font-weight:600; background-color: #edf8f3;" scope="col">Psychological Property</th>
+                                                        <th class = "border-bottom-0" style = "font-weight:600;background-color: #edf8f3;" scope="col">Honest Application </th>
+                                                        <th class = "border-bottom-0" style = "font-weight:600;background-color: #edf8f3;" scope="col">Deceptive Application </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody style = "color: rgb(66, 65, 65); font-weight:300;" >
+                                                    <tr >                           
+                                                        <td><em>"People don't read content - they skim it."</em></td>
+                                                        <td>Ensure key information is visually prominent and stands out from prose text, so that users can locate it at a first glance.</td>
+                                                        <td>Set default options to benefit the business, knowing that many users may forget to opt-out or not realise they can.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><em>"People tend to stick to defaults" </em></td>
+                                                        <td>Default to the option that is safest for the user, to help prevent mistakes.</td>
+                                                        <td>Bury important information in paragraphs to hide it from users.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <p class = "text-justify">
+                                            The above table gives example of two ways in which human cognition can be used either honestly or deceptively. In reality, there are infinitely many properties that can be exploited by malicious design interventions - the two most important ones are <strong>cognitive biases</strong>
+                                            and the <strong>dual process model</strong>, both of which will be discussed in this chapter. The majority of dark patterns leverage one or more of these properties, and by learning about how they operate, you will likely become more adept at spotting them in designs.
+                                        </p>
+                                    </div>
+
+
+                                    
+                        
+                            
+                        
+                                <div class = "group text-justify" >
+                                    <div id = "item-2" class = "header2">
+                                        <h2> Dual Processing Model </h2>
+                                    </div>
+                                    <p class = "lead">
+                                        Humans possess two main modes of decision making - System 1, which is quicker and more impusive and System 2, which is slower and more measured.
+                                    </p>
+                                    <p> 
+                                            The dual process model states that there are two main systems operating when we make decisions. This model, which underpins much of modern cognitive psychology research, states that the brain makes a distinction between decisions that are automatic and quick, and decisions that are slower, requiring more conscious thought.
+                                            Kahenman, in his 2012 book <em>Thinking Fast and Slow</em> refers to these modes of cognitive operation as System 1 and System 2 respectively. System 1 operates unconsciously, and is responsible for “originating impressions and feelings that are the main sources of the  explicit  beliefs  and  deliberate  choices  of  System  2.” 
+                                    </p>
+                                    <p>
+                                            Examples of actions which largely involve System 1 include answering 2 + 2, or recognising that one object is more distant than another. System 2 actions include telling someone your phone number, or looking for a woman with white hair in a crowd. The key differences between System 1 and System 2 are summarised in the following table:
+                                    </p>
+                                    <div style = "padding-top:20px; padding-bottom:20px;">
+                                        <table class="table table-fixed table-bordered ">
+                                            <thead>
+                                                <tr>
+                                                    <th class = "border-bottom-0" style = "font-weight:600;background-color: #edf8f3; width:40%"  scope="col">System 1</th>
+                                                    <th class = "border-bottom-0" style = "font-weight:600;background-color: #edf8f3; width:40%" scope="col">System 2 </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody style = "font-weight:300;">
+                                                <tr>                           
+                                                    <td>Mostly involuntary</td>
+                                                    <td>Mostly voluntary</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Linked to emotion</td>
+                                                    <td>Largely detached from emotion</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Implicit</td>
+                                                    <td>Explicit</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Rapid</td>
+                                                    <td>Slow</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Low effort</td>
+                                                    <td>High effort</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <p>
+                                        There are times where making rapid, efficient decisions is necessary, but there also scenarios where acting on impulse may result in an undesirable outcome. For instance, rushing to accept the terms and conditions of an agreement without reading them in detail is a System 1 decision, but in reality it ought to involve System 2. 
+                                    </p>
+                                    <h3 id = "item-21">Using the Dual Process Model in Designs</h3>
+                                    <p>
+                                        The dual process model can be used to inform design interventions, in contexts where it is appropriate to consider how users will likely make a decision. The examples below show two homepage designs for a website selling home security systems. The first
+                                        is largely tailored to System 1, presenting information immediately and requiring little cognitive effort from the user. The second design is more tailored to a System 2 mode of decision making, as it requires users to actively read and synthesise the information they see. 
+                                    </p>
+                                    <div class = "figure mx-auto" style = "padding-bottom:40px;padding-top:20px">
+                                            <img src="../images/psych/systemone.PNG" class=" img-thumbnail figure-img img-fluid" alt="Bookstore annotation" style = "width:100%; height:52%;padding-right:10px;">
+                                            <p class = "mx-auto annotations" >
+                                                    This is a System 1 based approach: the amount of text presented to the user initially is kept to a minimum and the information that is presented uses persuasive language and places emphasis on the company phone number. 
+                                                    This is designed to exploit System 1, capturing the user's attention enough to trigger a phone call.
+                                            </p>
+                                    </div>
+                                    
+                                    <div class = "figure mx-auto" style = "padding-bottom:40px;padding-top:20px">
+                                            <img src="../images/psych/systemtwo.PNG" class="img-thumbnail figure-img img-fluid" alt="Bookstore annotation" style = "width:100%; height:55%;padding-right:10px;">
+                                            <p class = "mx-auto annotations" >
+                                                This interface presents a larger quantity of information to the user, therefore requiring more initial cognitive effort. This largely appeals to System 2, as the user is required to read the information presented to 
+                                                them and select the most relevant details.
+                                            </p>
+                                    </div>
+                                    <p>
+                                            The link between the dual process model and ethics is significant, as it places users in a position of vulnerability. Arguably, some responsibility falls onto the users to carefully read terms and conditions and ensure they do not consent to anything without realising.
+                                            However, this does not remove the fact that deliberately designing an intervention to hide information or exploiting the fact that users often act without thinking, is unethical. Designers should bear the dual process model in mind, and ensure that users are fully aware of the consequences
+                                            of their actions even when using system 1.
+                                        </p>
+                                    <div class="danger-alert ">
+                                            <div class = " annotations flexbox d-flex flex-row align-items-center bg-light">
+                                                <div class="d-flex p-2">
+                                                    <i class="fas fa-exclamation-triangle fa-2x" style = "color: rgb(173, 17, 17)"></i>
+                                                </div>
+
+                                                <div style = "width:90%;" class =" para d-flex p-2 text-justify">
+                                                    System 1 is very easily exploited by dark patterns and unethical design interventions. Visual interference, hidden costs and hidden stipulations in particular, operate by sneaking small bits of information past the user as described in the introduction. 
+                                                </div>     
+                                            </div>
+                                    </div>
+
+                                    <div class = "row" style = "margin-bottom:20px; padding-bottom:20px;">
+                                        <div class = "col-6">
+                                            <div class="card" >
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Terms and Conditions</h4>
+                                                    <hr>
+                                                    <div style = "height:400px; margin-top:20px;" class = " d-flex justify-content-center overflow-auto">
+                                                        
+                                                        <div style = "width:95%;" class="card-text "> 
+                                                            <h4 style= "font-weight:600;"> Summary </h4>
+                                                            <p>
+                                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. <strong style = "font-size:14pt; font-weight:600;">Praesent libero. Sed cursus ante dapibus diam. </strong>Sed nisi. Nulla quis sem at nibh elementum imperdiet.  
+                                                            </p>
+                                                            <hr>
+                                                            <ol class ="lead">
+                                                                <li>Stipulation 1</li>
+                                                                <li>Stipulation 2</li>
+                                                                <li> Stipulation 3</li>
+                                                            </ol>
+                                                            <hr>
+                                                            <h4 style= "font-weight:600;margin-bottom:20px;"> Further details </h4>
+                                                            <h5>Stipulation 1</h5>
+                                                            <p>
+                                                                    Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                                            </p>
+                                                            <h5>Stipulation 2</h5>
+                                                            <p>
+                                                                    Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+                                                            </p>
+                                                            <h5>Stipulation 3</h5>
+                                                            <p>
+                                                                    Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. 
+                                                            </p>
+                                                        </div>
+
+                                                    </div>
+                                                    <hr>
+                                                    <button class = "btn btn-info btn-lg btn-block">
+                                                        Accept
+                                                    </button>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div style = "padding-top: 20px; padding-bottom:10px; border-bottom-style:solid; border-radius:5px; border-width:5px; border-color:rgb(17, 173, 82);" class = " bottom-caption bg-light">
+                                                <p class= "text-success">
+                                                        &nbsp; Do.
+                                                </p> 
+                                            </div>
+                                        </div>
+                                        <div class = "col-6">
+                                            <div class="card" >
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Terms and Conditions</h4>
+                                                    <hr>
+                                                    <div style = "height:400px; margin-top:20px;" class = " d-flex justify-content-center overflow-auto">
+                                                        <p style = "width:95%;" class="card-text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. 
+
+                                                                Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. 
+                                                                
+                                                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. 
+                                                                
+                                                                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. 
+                                                                
+                                                                Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. Sed pretium blandit orci. Ut eu diam at pede suscipit sodales. 
+                                                                Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. Sed pretium blandit orci. Ut eu diam at pede suscipit sodales. Aenean lectus elit, fermentum non, convallis id, sagittis at, neque. Nullam mauris orci, aliquet et, iaculis et, viverra vitae, ligula. Nulla ut felis in purus aliquam imperdiet. Maecenas aliquet mollis lectus. Vivamus consectetuer risus et tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. 
+
+                                                                Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. 
+
+                                                        </p>
+
+                                                    </div>
+                                                    <hr>
+                                                    <button class = "btn btn-info btn-lg btn-block">
+                                                        Accept
+                                                    </button>
+                                                    
+
+                                                </div>
+                                            </div>
+                                            <div style = "padding-top: 20px; padding-bottom:10px; border-bottom-style:solid; border-radius:5px; border-width:5px; border-color:rgb(173, 17, 17);" class = " bottom-caption bg-light">
+                                            <p class= "text-danger">
+                                                    &nbsp; Don't.
+                                            </p> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        The first example is an example of how the dual process model can be leveraged honestly, to aid the user's process of skimming and scanning. It implements several techniques to make the content more accessible to readers wishing to complete their tasks quickly:
+                                    </p>
+                                    <div class = "list-eg">
+                                        <div class = "example-content">
+                                            <ol>
+                                                <li>Uses <code>.h4</code> and <code>.h5</code> level text to break the content into sections and place emphasis on important points.</li>
+                                                <li>Ensures that the content is summarised in bullet points near the top, such that the user can access a minimal summary of information without having to scroll. More detail is availible should they seek it, however.</li>
+                                                <li>Uses inline <code>.strong</code> typography to make important points stand out to the user.</li>
+                                            </ol>
+                                        </div>
+
+                                    </div>
+                                    
+                                    <p> 
+                                        The second example presents how the dual process model can be used deceptively, to conceal undesirable stipulations in a large, inaccessible block of text. Naturally, the text given in the above example is dummy text but in practice, such poor designs are often accompanied with very technically worded writing that few users understand without reference to legal documentation.
+                                    </p>
+
+                                    <div class="component-alert ">
+                                            <div class = " annotations flexbox d-flex flex-row align-items-center bg-light">
+                                                <div class="d-flex p-2">
+                                                        <i>
+                                                            <img style = "width:75px;" src =  "../images/blogo.png">
+                                                        </i>
+                                                </div>
+
+                                                <div style = "width:90%;" class =" para d-flex p-2 text-justify">
+                                                    The scrollspy component of the Bootstrap library is very useful for pages containing a large amount of prose text, such as privacy policy pages. The section navigation list on the far right of each chapter of this guide is an example of a scrollspy being used to allow quick navigation to relevant parts of a long page.
+                                                </div>     
+                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class = "group text-justify" >
+                                    <div id = "item-3" class = "header2">
+                                        <h2> Cognitive Bias </h2>
+                                    </div>
+                                    <p class ="lead">Cognitive biases are defined as systematic errors in judgement and rationality, that lead to illogical behaviours and stereotyping. Examples of cognitive biases are the framing effect, default effect, sunk cost, bandwagon effect and scarcity bias.</p>
+                                    <p>
+                                        Cognitive biases lie at the heart of irrationality and stereotyping, and can be defined as systematic errors in thought that deviate from rationality. Psychology has identified a number of cognitive biases, many of which are relevant to UX design and in particular, 
+                                        unethical UX. Many ofthe cognitive biases described below are exploited by dark patterns and provide malicious designers with the means to effectively and efficiently manipulate the flaws in human decision-making, to the benefit of the platform.
+                                    </p>
+
+                                    <!-- FRAMING EFFECT -->
+
+                                    <div id = "item-31" class ="framing">  
+                                        <h3 >
+                                            The Framing Effect
+                                        </h3>
+                                        <p class = "lead">
+                                            The framing effect states that people's decisions significantly based on how information is presented to them, through wording or context. Peple rely more on the framing than the actual facts themselves, and this can lead to bias or poor long term decisions.
+                                        </p>
+                                        
+
+                                        <p>
+                                            The framing effect links into another popular theory known as loss aversion, which states that people tend to compulsively avoid outcomes they perceive as losses. Famously, this principle is demonstrated by a simple experimental result: most people would prefer not to lose £5 than potentially gain
+                                            £5. Phrases such as <em>"Don't miss out!</em> Loss aversion and framing effects are usually leveraged through the text and language used by a website. For instance, in the example of confirmshaming presented in chapter X, the option to reject the popup was framed in such a way that made the user feel as though doing so was a poor decision. 
+                                            In this context, using the framing effect to achieve this goal is unethical, as it involves evoking guilt in users. 
+                                        </p>
+
+                                        <p>
+                                        The framing effect is not inherently unethical, as it does not necessarily involve mistruth - it simple reshapes facts and presents them in such a way that they are perceived as desirable. It can be used for good: for instance, it was found in one study that women were more likely to self-examine for breast cancer symptoms if the negative effecs of <strong>not</strong>
+                                        doing so were stressed, rather than the positive effects of doing so. The positive framing was as follows:
+                                        </p>
+
+                                        <p class = "lead"><em>"Research shows that women who do BSE have an increased chance of finding a tumour in the early, more treatable stages of the disease."</em></p>
+                                        
+                                        <p> And the same information, but framed negatively was as follows:</p>
+
+                                        <p class = "lead">
+                                            <em>
+                                                "Research shows that women who do not do BSE have a decreased chance of finding a tumour in the early, more treatable stages of the disease."
+                                            </em>
+                                        </p>
+
+                                        <p>
+                                            This particular type of negative framing proved more effective in encouraging breast self-examination (BSE), despite the statements being semantically equivalent.
+                                        </p>
+
+                                        <p>
+                                            An example from of framing as used on a web interface is Facebook's <em>find friends</em> dialog, which attempts to persuade the user to find more friends via their email. The dialog uses both social proof and the framing effect, as it implies that other users benefit from finding friends, and that not finding friends will result in Facebook being less fun. Depending on whether the 
+                                            claim that <em>"people usually find up to 20 friends"</em> is accurate, this design intervention is not remarkably unethical. Despite being persuasive, it does not attempt to directly induce guilt or shame in the user, but rather highlights the benefits of performing one action over another.
+                                        </p>
+                                        <div style = "padding-top:20px; padding-bottom:40px; " class = "d-flex justify-content-center">
+                                                <img class = "img-fluid img-thumbnail" style = "width:80%; height:auto;" src= "../images/psych/lossaversion.png">
+                                        </div>
+
+                                        <div class="danger-alert ">
+                                                <div class = " annotations flexbox d-flex flex-row align-items-center bg-light">
+                                                    <div class="d-flex p-2">
+                                                        <i class="fas fa-exclamation-triangle fa-2x" style = "color: rgb(173, 17, 17)"></i>
+                                                    </div>
+                        
+                                                    <div style = "width:90%;" class =" para d-flex p-2 text-justify">
+                                                        Confirmshaming and trick question dark patterns use the framing effect to word content in such a way that the user is deceived or manipulated into choosing one option over another. Using double negatives is a common way to frame information in a confusing way.
+                                                    </div>     
+                                                </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- DEFAULT EFFECT -->
+                                    
+                                    <div id = "item-32" class ="default">
+                                        <h3 >
+                                                The Default Effect
+                                        </h3>
+                                        <p class = "lead">
+                                            The default effect refers to the general tendency of people to prefer an option if it has been chosen by default, regardless of whether it is logically the best choice. Less than 5% of users change their default settings on websites, so choosing appropriate defaults is important.
+                                        </p>
+                                        <p>
+                                            There are two main factors behind the default effect - the desire for interfaces to "do the thinking for us" and the perception that default options are better for us, as they have been chosen by the platform. The latter implies a level of trust in the platform, as users trust its authority to select an option that benefits the user. While the ethics of defaults will be described further in later chapters,
+                                            it can be said that they are very useful in contexts where processes should be streamlined for non-technical users, such as account setup or settings configuration.  
+                                        </p>
+                                        <p>
+                                            Having a "recommended" set of settings for general users, while offering more technical users the opportunity to change these defaults can provide users who may be confused as to which options to choose with a sense of stability and security. 
+                                            
+                                        </p>
+
+                                        <div style = "padding-top:20px; padding-bottom:40px; " class = "d-flex justify-content-center">
+                                                <img class = "img-fluid img-thumbnail" style = "width:80%; height:auto;" src= "../images/psych/setup.png">
+                                        </div>
+
+                                        <p>
+                                            This example from Dropbox's setup wizard illustrates how the default effect can lead users towards an option that is simpler for them. The average user will have a limited knowledge of Advanced Settings and may initially be confused as to which 
+                                            option they should select. Preselecting a default removes this confusion.
+                                        </p>
+                                        <p>
+                                                Users should be able to intuitively understand why a particular option has been pre-selected for them. In the case where this is not possible, it should be explained to them.
+                                        </p>
+                                        <p>
+                                            However, pre-selecting options for users comes with a dark flipside. Given that it is a well known fact that users, will stick with default options, could it be possible for designers to pre-select options that benefit the platform at the expense of the user? The answer to this question is absolutely - <em>bad defaults</em>
+                                            work in exactly this way, and preselects default options that steer users towards more expensive options, or options that cause them to relinquish more data. Often, these bad defaults are combined with restrictive dark patterns, which in addition to selecting unethical default settings, make it doubly difficult for users to change these defaults.
+                                            An example of a <strong>bad default</strong> is shown below.
+                                        </p>
+                                        <!-- Default checked -->
+                                        <div style = "margin-bottom:40px; margin-top:40px;" class = "bd-example ">
+                                            
+                                            <div class = "d-flex justify-content-center">
+                                                
+                                                <form> 
+                                                        <h3 style = "padding-top:15px; padding-bottom:15px; font-family:'Roboto'; font-weight:300;"> Would you like to sign up to our newsletter?</h3>
+                                                    
+                                                        <div class="custom-control custom-radio" style = "margin-bottom:10px;">
+                                                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked >
+                                                                <label style = "font-weight:300;" class="custom-control-label" for="customRadio1">Sign me up!</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio" style = "margin-bottom:15px;">
+                                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                            <label style = "font-weight:300;" class="custom-control-label" for="customRadio2">No thanks!</label>
+                                                        </div>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                        <p class = "lead">
+                                            Fundamentally, this example streamlines the business goal, rather than the user's. Defaults should only ever be used to aid the user, and should never nudge them towards options that are more expensive or result in them relinquishing consent. 
+                                        </p>
+
+                                    </div>
+
+                                    <div id = "item-33" class = "sunk-cost">
+                                        <h3 >
+                                                Sunk Cost Fallacy
+                                        </h3>
+                                        <p class = "lead">
+                                            Sunk cost refers to the tendency to continue with a course of action if significant effort has already been expended to complete it. The effort already put into the task is perceived as lost if the task is abandoned.
+                                        </p>
+                                        <p>
+                                            Phrases such as <em>"you've come too far to give up now"</em> perfectly embody the sunk cost fallacy. While this particular cognitive bias has its uses, its tendency to cause people to commit to failing courses of action 
+                                            renders it particularly dangerous. Fundamentally, the sunk cost fallacy involves valuing past expenditures over what is actually beneficial in the future, and can be used quite deviously by unethical design interventions.
+                                        </p>
+
+                                        <div class="danger-alert ">
+                                                <div class = " annotations flexbox d-flex flex-row align-items-center bg-light">
+                                                    <div class="d-flex p-2">
+                                                        <i class="fas fa-exclamation-triangle fa-2x" style = "color: rgb(173, 17, 17)"></i>
+                                                    </div>
+                        
+                                                    <div style = "width:90%;" class =" para d-flex p-2 text-justify">
+                                                        Do not delay important information such as additional costs until right before they check out - this is a hidden costs dark pattern. This abuses the fact that they will not want to waste the effort they have already put in, and unfairly nudges them towards options they may not otherwise have taken had they been given all of the relevant information earlier.
+                                                    </div>     
+                                                </div>
+                                        </div>
+
+                                        <p> 
+                                            However, it is also possible to use the sunk cost fallacy to stop a user abandoning their tasks in a slightly more ethical way. The common design pattern of <em> progress indicators</em>
+                                            primarily serve the purpose of notifying the user of how far along they are in a process. By showing them their progress, this also wields the dual effect of making them less likely to give up on their task as their progress is
+                                            clearly visualised. 
+                                        </p>
+
+                                        
+                                    <div class="component-alert ">
+                                            <div class = " annotations flexbox d-flex flex-row align-items-center bg-light">
+                                                <div class="d-flex p-2">
+                                                        <i>
+                                                            <img style = "width:75px;" src =  "../images/blogo.png">
+                                                        </i>
+                                                </div>
+
+                                                <div style = "width:90%;" class =" para d-flex p-2 text-justify">
+                                                        The Bootstrap component library provides good support for progress bars, using the .progress-bar class. A range of animated or static progress bars are available and can be embedded very easily as shown below.
+                                                </div>     
+                                            </div>
+                                    </div>
+
+                                        <div class = "bd-example  d-flex justify-content-center">
+                                            <div class="progress" style = "margin-top:40px; margin-bottom:40px; width:95%;">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                            </div>
+                                        </div>
+                                        <p style = "margin-top:20px;" class = "lead">
+                                            Progress bars are an example of using the sunk cost fallacy in a way that is more useful than unethical. While the dual purpose of the intervention is somewhat covert, its usefulness as a design pattern outweighs this.
+                                        </p>
+
+                                    </div>
+
+                                    <div id = "item-34" class = "bandwagon">
+                                        <h3 >
+                                                The Bandwagon Effect
+                                        </h3>
+                                        <p class = "lead">
+                                            People are more likely to perform an action or believe a claim if others have already done so. This links very closely to the marketing tactic of <em>social proof,</em> 
+                                            which involves publicly displaying information about customer purchases, such as the number of people who have a purchased a particular product, in an attempt to convince
+                                            others to purchase it as well.
+                                        </p>
+                                        <p>
+                                            The concept of value lies at the heart of the bandwagon effect. The more popular a product is, the more valuable it will seem; by signalling to users that other customers have found value in a product, the perceived value of the produce increases.
+                                            Humans are social creatures, and will always use the opinions of others to inform their purchasing decisions. This has a number of applications in both online marketing and beyond.
+                                        </p>
+                                        <p>
+                                            Perhaps the most powerful application of the bandwagon effect is to <strong> review systems for products on e-commerce websites.</strong> Implementing social proof honestly (that is displaying information accurately and without bias), while harnessing the potential to persuade users, harnesses an equivalent power to dissuade. User ratings and testimonials are common examples of social proof; by granting users the freedom to publish reviews, the platform must accept the risk that these reviews will not always be positive.
+                                            User reviews, while often intended as a marketing strategy, promote a number of positive ethical values, such as trust and a sense of community. Social proof nudges have traditionally been used for good, in the context of environmental conservation but these techniques have recently been repurposed to guilt individuals into purchasing items, or mislead them with fabricated information.
+                                        </p>
+
+                                        <div style = "padding-top:30px; padding-bottom:30px; margin-top:30px; " class = "img-thumbnail d-flex justify-content-center">
+                                                <img class = "img-fluid" style = "width:85%; height:auto;" src= "../images/psych/cah.png">
+                                        </div>
+                                        <div style = "border-radius:3px; padding-top:10px; margin-bottom:30px;" class = " bg-light d-flex justify-content-center">
+                                            <p style = "width:95%;" class = "annotations">
+                                                This example is taken from Amazon, which has a famously good reviews system. Reviews are displayed transparently, and are clearly sourced. Reviews and testimonials should not be cherry picked - all should be displayed to users, to allow them to make an informed decision. 
+                                            </p>
+                                        </div>
+                                    
+                                        <div class="danger-alert ">
+                                                <div class = " annotations flexbox d-flex flex-row align-items-center bg-light">
+                                                    <div class="d-flex p-2">
+                                                        <i class="fas fa-exclamation-triangle fa-2x" style = "color: rgb(173, 17, 17)"></i>
+                                                    </div>
+                        
+                                                    <div style = "width:90%;" class =" para d-flex p-2 text-justify">
+                                                        Social proof becomes a dark pattern when the information presented to users is innacurate, or selectively hand picked to only present one side of the story.
+                                                    </div>     
+                                                </div>
+                                        </div>
+
+
+
+                                    </div>
+
+                                    <div id = "item-35" class = "scarcity">
+                                        <h3 >
+                                                Scarcity Bias
+                                        </h3>
+                                        <p class = "lead">
+                                            Similar to the bandwagon effect, scarcity bias refers to the tendency for people to place greater value in things that are viewed as scarce or rare, over objects that are abundant.
+                                        </p>
+
+                                        <p>
+                                            It is well known that diamond is worth more than lead, and the reason is quite is quite simple: diamond is rarer. Diamond's scarcity makes it more difficult to acquire and in the minds of human beings, this correlates to a greater value. This example perfectly illustrates the scarcity bias: the tendency for humans to desire objects that are scarce over objects that are abundant.
+                                        </p>
+
+                                        <p>
+                                            The most common exploitation of this heuristic in UX design is in relation to sales, when an item is displayed as low in stock or an offer is described as ending soon. Greater value is placed on items that are low in supply due to the principle of social proof, the perception that a low-stock item must be more popular and therefore of higher value than an item high in stock. The user also wishes to avoid missing out on obtaining this precious resource and mitigate any possible future regret they may feel for not purchasing it.
+                                        </p>
+
+                                        <p>
+                                            Scarcity bias is implemented in two key ways: <strong>quantity limited scarcity</strong>, which imposes a quantity restriction on acquiring a product and <strong>time limited scarcity</strong>, which imposes a time limit. 
+                                        </p>
+                                        <div class = "list-eg">
+                                            <ol class= "example-content">
+                                                <li>Time limited scarcity is generally implemented with countdown timers, or an emphasis that a sale or product will become unavailible soon, hence spurring the user into action. As described in the chapter on dark patterns, live countdown timers are unethical as they induce unecessary stress. While it is prudent to inform customers of when a sale is ending, this should not be done with the intention of pressuring them into making a quick decision.</li>
+                                                <li>Quantity limited scarcity is similarly implemented by displaying generic low stock messages that do not indicate whether an item will be re-stocked soon, hence possibly inducing unnecessary anxiety in the user.</li>
+                                            </ol>
+                                        </div>
+                                            <div style = "margin-top:40px; margin-bottom:40px;">
+                                                <div class="card" >
+                                                        <div class="card-body">
+                                                            <div class= "timer-content">
+                                                                <div style = "padding-top:20px; padding-bottom:20px;" class = "d-flex justify-content-center">
+                                                                    <h4  style =  "font-size:2.7rem; font-weight:300;"> OFFER ENDS IN </h4>
+                                                                </div>
+                                                                <div class = "timer">
+                                                                    <div class = "d-flex justify-content-center row">
+                                                                        <div class = "col-1 d-flex justify-content-center">
+                                                                            <h3 class = "timer-head "style = "padding-top:10px; padding-bottom:10px;"> 04 </h3>
+                                                                        </div>
+                                                                        <div class = "col-1 d-flex justify-content-center">
+                                                                                <h3 class = "timer-head " style = "padding-top:10px; padding-bottom:10px;">:</h3>
+                                                                            </div>
+                                                                  
+                                                                        <div class = "col-1 d-flex justify-content-center">
+                                                                            <h3 class = "timer-head " style = "padding-top:10px; padding-bottom:10px;">48</h3>
+                                                                        </div>
+                                                                        <div class = "col-1  d-flex justify-content-center">
+                                                                                <h3 class = "timer-head " style = "padding-top:10px; padding-bottom:10px;">:</h3>
+                                                                        </div>
+                                                                        <div class = "col-1  d-flex justify-content-center">
+                                                                            <h3 class = "timer-head " style = "padding-top:10px; padding-bottom:10px;" id="seconds"></h3>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class = "d-flex justify-content-center row" style = "padding-bottom:20px">
+                                                                            <div class = "col-2 d-flex justify-content-center ">
+                                                                                    <h4 class = "timer-label "  style = "font-weight:300;"> HOURS </h4>
+                                                                            </div>
+                                                                            <div class = "col-2 d-flex justify-content-center">
+                                                                                    <h4 class = "timer-label "  style = "font-weight:300;"> MINUTES </h4>
+                                                                                </div>
+                                                                            <div class = "col-2 d-flex justify-content-center">
+                                                                                    <h4 class = "timer-label " style = "font-weight:300;"> SECONDS </h4>
+                                                                            </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div style = "padding-top: 20px; padding-bottom:10px; border-bottom-style:solid; border-radius:5px; border-width:5px; border-color:rgb(173, 17, 17);" class = " bottom-caption bg-light">
+                                                    <p class= "text-danger">
+                                                            &nbsp; Don't.
+                                                    </p> 
+                                                    </div>
+                                                </div>
+                                              
+                                      
+                                            <p class = "lead">
+                                                Interventions should not aim to unecessarily create a sense of urgency or panic in users, but should intend to <strong>inform them neutrally</strong> of when a sale is ending or if an item is low in stock.
+                                            </p>
+                                            <p>
+                                                There is nothing wrong with signalling to users that a sale will end soon or an item is going out of stock, as it is constitutes vital information. However, this information should not be delivered in such a way that induces
+                                                panic - if an item is low in stock, the stock number as well as the likely restock date should be displayed, and if a sale is ending soon, the end date should be displayed statically.
+                                            </p>
+
+                                    </div>
+
+                                    
+                                    <div style = "margin-top:40px;margin-bottom:50px;" class="card-link card shadow-sm" >
+                                            <div class="card-body">
+                                            <h5 class="card-title">Next Chapter</h5>
+                                            <p class="card-text text-muted">Go to the next chapter to read about how websites can be designed to embody user values.</p>
+                                            </div>
+                                            <a  class = "stretched-link" href = "autonomy.html" ></a>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "col-3">                      
+                                <div id = "scrollspy"  style = "position:fixed; width:85%;">
+                                    <div class= "p-2" style = "margin-left:50px; font-size:12pt;">
+                                        <ol style = "list-style:none;" class = "example-content list-eg">
+                                            <li>
+                                                <a class= "text-muted" href = "#item-1">Introduction</a>
+                                                <ol class = "example-content list-eg">
+                                                    <li style = "width:200px;"><a class= "text-muted" href = "#item-11"> A Simple Example </a></li>
+                                                   
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                <a class= "text-muted" href = "#item-2">Dual Process Model</a>
+                                                <ol class = "example-content list-eg">
+                                                        <li style = "width:200px;"><a class= "text-muted" href = "#item-21"> Using the Dual Process Model in Designs </a></li>
+                                                        
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                <a class= "text-muted" href = "#item-3">Cognitive Bias</a>
+                                                <ol  style = "width:200px;" class = "example-content list-eg">
+                                                        <li><a class= "text-muted" href = "#item-31"> Framing Effect </a></li>
+                                                        <li><a class= "text-muted" href = "#item-32"> Default Effect </a></li>
+                                                        <li><a class= "text-muted" href = "#item-33"> Sunk Cost Fallact</a></li>
+                                                        <li><a class= "text-muted" href = "#item-34"> Bandwagon Effect</a></li>
+                                                        <li><a class= "text-muted" href = "#item-35"> Scarcity Bias </a></li>
+                                                        
+                                                </ol>
+                                            </li>
+
+                                        </ol>
+                                    </div>
+                                </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+    
+    
+    
+    
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script>
+          $("#sidebar-block").load("../sidebar.html");
+    
+      </script>
+
+      <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("seconds").innerHTML = seconds;
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+      </script>
+    </body>
+    
+    </html>
+    

@@ -1,0 +1,807 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>ELVA Guide</title>
+      <!-- Custom styles for this template -->
+    
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&amp;display=swap" rel="stylesheet">
+      <link href="../css/style.css" rel="stylesheet">
+      <link href="css/simple-sidebar.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+      <link href="//db.onlinewebfonts.com/c/0fadaa21fcac88ceee0bb8da992c221b?family=SalesforceSans-Regular" rel="stylesheet" type="text/css"/> 
+      <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400&amp;display=swap" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&amp;display=swap" rel="stylesheet"> 
+    
+
+      <script type="text/javascript">
+        function SwapDivs(div1,div2)
+        {
+           d1 = document.getElementById(div1);
+           d2 = document.getElementById(div2);
+           if( d2.style.display == "none" )
+           {
+              d1.style.display = "none";
+              d2.style.display = "block";
+           }
+           else
+           {
+              d1.style.display = "block";
+              d2.style.display = "none";
+           }
+        }
+        </script>
+        
+    <style>
+
+    </style>
+    </head>
+
+    <body>
+            
+    <div class = "container-fluid">
+        <div class = "row">
+            <div class = "col-2">
+                <div id = "sidebar-block"></div>
+            </div>
+            <!-- MAIN BODY -->
+            <div class = "col-10">
+                <div data-spy="scroll" data-target="#scrollspy" data-offset="0">
+                    <div style = "background-color: #68c59e1f;">
+                        <div style = "padding-top:40px; padding-bottom:40px; padding-left:150px;">
+                            <h1 class = " text-muted display-4"> Designing for User Values</h1>
+                        </div>
+                            
+                    </div>
+                    <div class = "row">
+                        <div class = "col-9">
+                            <div style = "width:100%; padding-left:150px;">
+                                <div class = "heading">
+                                    <p class= "leading text-muted">
+                                        One of the most important aspects of ethical design is value sensitivity; or the embodiment of specific moral values by web interfaces. Values relevant to ethical web design are user autonomy, transparency, respect for the user's decision making process, and the concept of informed consent.
+                                    </p>
+                                    <div id = "banner">
+                                        <img  src="../images/auton/banner.png" class=" img-fluid img-thumbnail" alt="UI Kit banner" style = " width:95%; height:40%">
+                                    </div>
+                                </div>
+
+                                    <div id = "item-1" class = "group text-justify">
+                                        <div  class = "header2">
+                                            <h2 style = "font-weight: 500"> Introduction </h2>
+                                        </div>
+                                        <p>
+                                        Designing websites so that they embody social values is an endeavour that on the surface, seems strange. How do we design interfaces that are transparent and respectful? Is it possible to even concretely define transparency and respect? These are all relevant challenges, but they are not without a solution - the concept of <em>value sensitive design</em>
+                                            describes an approach to the engineering of digital systems that accounts for human values in a comprehensive manner, and interweaves morals throughout the design process. The result is a system that successfuly embodies a select set of clearly defined, scoped values, and this is the approach taken by the ELVA guide.
+                                        </p>
+                                        <p>
+                                            Through insights from theoretical, practical and user-based research, the values most relevant to ethical interface design have been identified as: informed consent, autonomy, transparency and respect. Informed consent is a concept which underpins not only the content discussed in this chapter, but many of the concepts discussed in the following privacy chapter. 
+                                            It is impossible to have autonomy or freedom if one's ability to consent to certain actions is compromised. As such, the guidamce offered in this chapter rests very heavily in the concept of informed consent. 
+                                        </p>
+
+
+                                    </div>
+                                
+
+                                    <div id = "item-2" class = "group text-justify">
+                                        <div class = "header2">
+                                            <h2 style = "font-weight: 500"> Informed Consent </h2>
+                                        </div>
+                                        <p>
+                                            Informed consent can be understood as giving a person or entity authorisation to perform a particular action and applies to web interfaces very frequently, in relation to cookies for example. Protecting the autonomy of users means not acting on behalf of them if their explicit and affirmatice consent has not
+                                                                been given beforehand. 
+                                        </p>
+
+                                        <p>Valid, informed consent consists of the following properties:</p>
+                                                                
+                                            <ol class= "list-eg example-content">
+                                                <li>
+                                                    It must be given <strong>explicitly and affirmatively </strong> - consent cannot be assumed.
+                                                </li>
+
+                                                <li>
+                                                    It must be given with <strong>full knowledge of any consequences</strong> and in the absence of any manipulating forces.
+                                                </li>
+                                                <li>
+                                                    It must offer a <strong>fair and equal choice </strong> between consent and non-consent. 
+                                                </li>
+                                                <li>
+                                                        Users must be given a fair opportunity to revoke consent at any time.
+                                                    </li>
+                                            </ol>
+
+                                            <p>
+                                                Complying with these principles in practice can be challenging, but is not impossible. By ensuring information is tonally neutral and presented to the user in a timely, clear fashion
+                                                (as advised by the transparency principle), it is possible to meet criteria 2 of informed consent quite easily. Furthermore, by ensuring the symmetry of design interventions, and 
+                                                leveraging visual hierarchy ethically and in a way that focuses on the user's goals, it becomes possible to meet criteria 3.
+                                            </p>
+                                                Offering users a "fair choice" in the context of interface 
+                                                design largely involves ensuring that they are made explicitly aware of all possible action possibilities, and have an equal opportunity to follow each. In many ways, this links with 
+                                                perceivability, discussed in the first chapter.
+                                            <p>
+
+                                            </p>
+
+                                            <div class="danger-alert ">
+                                                <div class = "flexbox d-flex flex-row align-items-center bg-light">
+                                                    <div class="d-flex p-2">
+                                                        <i class="fas fa-exclamation-triangle fa-2x" style = "color: rgb(173, 17, 17)"></i>
+                                                    </div>
+                                                    <div class ="annotations d-flex p-2">
+                                                            Sneak into basket dark patterns violate the principle of informed consent by adding items to the user's cart without explicitly asking.
+                                                    </div>     
+                                                </div>
+                                            </div>
+
+                                        <p>You must seek the user's informed consent before doing any of the following, at <strong>every instance.</strong> That is, even if the user has consented previously, they must be re-prompted if the terms of this agreement change at any point throughout the interaction:</p>
+
+                                        <ol class= "example-content list-eg">
+                                            <li>
+                                                    Collect any form of data, including cookies. 
+                                            </li>
+                                            <li>
+                                                Access a third-party app.
+                                            </li>
+                                            <li>
+                                                Act on behalf of a user either on a third party app (e.g. Twitter, email client) or on the website itself (e.g. adding items to a user's cart). 
+                                            </li>
+                                        </ol>
+                                        <p>
+                                            The ways in which consent can be sought for these action vary - the most common mechanism is via a popup or modal dialog.
+                                            These ensure that the user is focussed on the task at hand, and tunnels their attention to providing consent. 
+                                            However, it is important to avoid overusing modal popups, as they can be intrusive. Generally, popups should only be used 
+                                            for <strong>necessary purposes</strong> that require the user's immediate and undivided attention. 
+                                            As such, the content in this chapter will provide mechanisms for gaining adequate consent that do not necessarily require the use of popups. 
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <div id = "item-3" class = "group text-justify">
+                                            <div class = "header2">
+                                                <h2 style = "font-weight: 500">Informative Transparency </h2>
+                                            </div>
+                                            <p >
+                                                A very important aspect of maintaining an ethical interface is informative transparency, and ensuring that users are provided with all the information they need to make balanced decisions <strong>at the point of the decision being made</strong>.
+                                                    All information presented to users must be accurate, genuine and displayed in a clear and readable format; the following guidelines below offer more structured advice for embodying transparency in web interfaces.
+                                            </p>
+                                            <ol class= "example-content list-eg">
+                                                <li >
+                                                    All information given to the user must be accurate and presented in an immediately usable format - that is, user should be able understand and make sense of information at a first glance. It must be clear as to what each piece of information refers to. 
+                                                    <ol class= "example-content list-eg">
+                                                        <li>
+                                                            Values should be given to no more than 2 decimal points, and quantities should be labelled with the units likely to be the most familiar to the userbase.
+                                                        </li>
+                                                        <li style = "padding-top:10px;">
+                                                                Fake testimonials, deceptive activity counters and deceptive countdown timers must not be used under any circumstances. 
+                                                        </li>
+                                                        <li>
+                                                            Links to privacy policies and terms of conditions should be labelled descriptively and it should be very clear that they are clickable <a href=""><u>like this</u></a>.
+                                                        </li>
+
+                                                    </ol>
+                                                </li>
+                                                <li >
+                                                    If reviews and testimonials are displayed, the user should be able to see their source unless doing so would lead to a loss of privacy for other users.
+                                                </li>
+                                                <li >
+                                                    Design interventions must not use visual presentation or structure to conceal important details from the user, or make it more difficult for them to locate it, such as burying  stipulations that are likely to affect the user's decision in lengthy terms and conditions agreements. 
+                                                </li>
+                                                <li>
+                                                    Information that is likely to affect a user's decision must be provided to them as soon as it is relevant and must not be delayed. For instance, information on shipping costs must not be withheld until the final stage of a checkout - it must be made available as soon as the user views their basket initially.
+                                                </li>
+
+                                                <li >
+                                                    Information presented to users should be persistent, in that once they have accessed it initially, they should be able to re-access it for the remaining duration of the interaction
+                                                </li>
+                                                <li>
+                                                    Where the reason is not intuitive, users should be informed of why it is necessary for them to perform certain actions or relinquish certain data, especially if doing these things is mandatory.
+                                                </li>
+                                            </ol>
+                                        <p>
+                                            As you will see later in this chapter, there are many ways to tangibly implement design interventions that embody these guidelines. A common problem associated with transparency is selecting an appropriate format with which to deploy information - popups are irritating and excessive text can clutter the page, so balancing transparency with traditional usability can be a challenge. The way in which information is 
+                                            presented to the user depends very much on the context of the interaction, and the UI elements already present on the screen.
+                                        </p>
+                                    </div>  
+                                    <hr>
+                                    <div id = "item-4" class = "group text-justify">
+                                        <div class = "header2">
+                                            <h2 style = "font-weight: 500"> Maintaining Symmetry </h2>
+                                        </div>
+                                        <ol>
+                                            <li>
+                                                <p class = "lead">
+                                                    Design interventions should offer symmetry of action possibilities - interventions should not make it <strong>markedly more difficult for the user to identify and choose certain action potentials over others </strong> except for cases where doing so helps the
+                                                    user to complete their goals or protects the privacy of other users.
+                                                </p>
+                                            </li>
+                                        
+                                        <p>
+                                            Ensuring that action possibilities are symmetric helps to offer the user a fair choice between options, hence protecting their autonomy and embodying the principle of informed consent.
+
+                                        <p>
+                                            Interventions must not use the visual presentation of UI elements to hide or conceal action possibilities; and buttons which represent yes or no options should be equally placed in the visual hierarchy of the page, and should only stylistically differ for 
+                                            the purposes of distinguishing between them and avoiding user errors. In a similar vein, roughly an equal number of clicks should be necessary for consent and non-consent; it should not be more difficult or more time consuming to refuse consent in any context. 
+                                        </p>
+                                    
+                                        <div >
+                                            <div class = "flexbox d-flex flex-row align-items-center bg-light advice-alert">
+                                                <div class="d-flex p-2">
+                                                    <i class="fas fa-lightbulb fa-2x" style = "color: #fcde4c;"></i>
+                                                </div>
+                                                <div class ="annotations d-flex p-2">
+                                                        Try clicking the "Learn More" links on each example and see what happens.
+                                                </div>     
+                                            </div>
+                                        </div>
+                                        <div class = "row" style = "margin-bottom:40px; margin-top:40px;">
+                                            <div class = "col-6">
+                                                <div class="card" >
+                                                    <div id = "swapper-first-do"  style = "display:block;" class="card-body">
+                                                        <h4> Dialog Heading</h4>
+                                                        <hr>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. 
+                                                        </p>
+                                                        <div style = "margin-top:10px; width:85%;">
+                                                                <a href = "javascript:SwapDivs('swapper-first-do','swapper-second-dont')" >Learn More</a>                                        
+                                                        </div>
+                                                        <hr>
+                                                        <div id = "button-group1" class="d-flex column justify-content-around">
+                                                            <button type="button" style = "width:200px;" class="btn btn-success">Accept</button>
+                                                            <button  type="button" style = "width:200px;" class="btn  btn-danger">Reject</button>                                   
+                                                        </div>
+                                                    </div>
+                                                    <div  id = "swapper-second-dont"  style = "display:none;" class = "card-body">
+                                                        <h4> More Information</h4>
+                                                        <hr>
+                                                        <p>
+                                                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. 
+                                                        </p>
+                                                        <div style = "margin-top:10px; width:75%;">
+                                                                <a href = "javascript: SwapDivs('swapper-second-dont', 'swapper-first-do')">Go Back</a>
+                                                                
+                                                        </div>
+                                                        <hr>
+                                                        <div class="d-flex justify-content-around">
+                                                            <button type="button" style = "width:200px;" class="btn btn-success">Accept</button>
+                                                            <button  type="button" style = "width:200px;" class="btn  btn-danger">Reject</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div style = "padding-top: 20px; padding-bottom:10px; border-bottom-style:solid; border-radius:5px; border-width:5px; border-color:rgb(17, 173, 82);" class = " bottom-caption bg-light">
+                                                    <p class= "text-success">
+                                                            &nbsp; Do.
+                                                    </p> 
+                                                </div>
+                                            </div>
+
+                                            <div class = "col-6">
+                                                <div class="card" >
+                                                    <div id = "swapper-first"  style = "display:block;" class="card-body">
+                                                        <h4> Dialog Heading</h4>
+                                                        <hr>
+                                                        <p>
+                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. 
+                                                        </p>
+                                                        <div style = "margin-top:10px; width:85%;">
+                                                                <a href = "javascript:SwapDivs('swapper-first','swapper-second')" >Learn More</a>
+                                                                
+                                                        </div>
+                                                        <hr>
+                                                        <div id = "button-group1" class="d-flex column justify-content-center">
+                                                            <button type="button" style = "width:85%;" class="btn  btn-block btn-success">Accept</button>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div  id = "swapper-second"  style = "display:none;" class = "card-body">
+                                                        <h4> More Information</h4>
+                                                        <hr>
+                                                        <p>
+                                                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. 
+                                                        </p>
+                                                        <div style = "margin-top:10px; width:75%;">
+                                                                <a href = "javascript: SwapDivs('swapper-second', 'swapper-first')">Go Back</a>                                       
+                                                        </div>
+                                                        <hr>
+                                                        <div class="d-flex justify-content-around">
+                                                            <button type="button" style = "width:200px;" class="btn btn-success">Accept</button>
+                                                            <button  type="button" style = "width:200px;" class="btn  btn-danger">Reject</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div style = "padding-top: 20px; padding-bottom:10px; border-bottom-style:solid; border-radius:5px; border-width:5px; border-color:rgb(173, 17, 17);" class = " bottom-caption bg-light">
+                                                    <p class= "text-danger">
+                                                        &nbsp; Don't.
+                                                    </p> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            The first example is considered good practice as it presents the buttons to accept and reject on the same level of the visual hierarchy; the effort required to accept is equal to the effort required to reject.
+                                        </p>
+                                        <p> In the second example, the user must select "learn more" before they are able to view the option to reject the prompt. This is quite unintuitive, meaning that many users will not realise that clicking the link reveals the button. This violates perceivability, as the user is not guaranteed to identify all action possibilities, since one is hidden beneath another link. Similarly, it takes two clicks to reject the prompt, compared with one click to accept - this asymmetry is considered poor ethical practice.</p>
+                                
+                                        <li style = "margin-top:40px; margin-bottom:40px;" class = "lead">
+                                                The process of cancelling, unsubscribing or deleting something must not be less intuitive or more difficult than the process of signing up for it in the first place. 
+                                        </li>
+                                        <p>
+                                            In a similar vein to the previous example, the process of sign-up should be equal in difficulty to the process of account deletion. Several platforms such as Amazon and Skype make it disproportionately difficult for users to delete their account, with Amazon requiring that users contact customer support to do so. 
+                                            Users should be given the opvvportunity to delete their account, unsubscribe from newsletters and otherwise revoke consent in any context <strong>via the web interface</strong>, in a way that can be accessed from every page of the site. 
+                                        </p>
+                                        <p>
+                                            The recommended strategy is an <strong> account settings page</strong>, which can be accessed through the main website navigation bar. This settings page should consist of a sidebar, which contains clear and descriptive headings which summarise the actions a user can take on each panel. In this way, it should take between 2-3 clicks for the user to locate the mechanism for account deletion/unsubscription from the homepage.
+                                            
+                                        </p>
+
+                                        <p>
+                                            The example below displays <strong> good design practice</strong> for a settings page. Each sidebar item contains a clear description of the action possibilities contained within, making it easy for users to instantly identify which panel they need to access.
+                                        </p>
+                                            <div  class = "bd-example" style= " padding-top:40px; padding-left:40px; padding-bottom:40px; padding-right:40px; margin-top:40px; margin-bottom:20px;" >
+                                                <div  class="row">
+                                                    <div class="col-6">
+                                                        <div class="align-middle list-group" id="list-tab" role="tablist">
+                                                            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">
+                                                                <h5>Account Settings</h5>
+                                                                <p >
+                                                                    Manage your account settings, including changing your username, password, email and deleting/deactivating your account.
+                                                                </p>
+                                                            </a>
+                                                            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
+                                                                <h5>Privacy and Security</h5>
+                                                                <p >
+                                                                    Manage your account privacy settings, including your third party accounts and permissions.
+                                                                </p>
+                                                            </a>
+                                                            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">
+                                                                <h5> Notifications </h5>
+                                                                <p>
+                                                                    Manage your account notifications, including toggling push and email notifications.
+                                                                </p>
+
+                                                            </a>
+                                                            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">
+                                                                <h5> Appearance </h5>
+                                                                <p>
+                                                                    Personalise the site's appearance; change the font size and site theme.
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="col-6">
+                                                        <div class="tab-content" id="nav-tabContent">
+                                                            <div class="tab-pane fade show active " id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                                                                <div>  
+                                                                    <h4 style = "padding-bottom:10px;">Account Settings </h4>
+                                                                    
+                                                                    <div class="form-group">
+                                                                            <label for="exampleInputEmail1">Username</label>
+                                                                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Username">
+                                                                            
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                            <label for="exampleInputEmail1">Email Address</label>
+                                                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email">
+                                                                            
+                                                                    </div>
+
+                                                                        <div class="form-group">
+                                                                                <label for="exampleInputEmail1">Password</label>
+                                                                                <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Password">
+                                                                                
+                                                                        </div>
+                                                                        <button style = "width:100%" type="button" class="btn btn-success">Save Settings</button>
+                                                                        <hr>
+                                                                        <div class="form-group">
+                                                                                <label  class = "text-danger">Account Deletion</label>
+                                                                                <button type="button" class="btn btn-sm btn-danger btn-block">Delete Account</button>
+                                                                                <small>Click here to begin the process of deleting your account. <strong>Deleted accounts are not recoverable.</strong></small>
+                                                                                
+                                                                        </div>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                                                                <div>
+                                                                    <h4 style = "padding-bottom:10px;">Privacy Settings </h4>
+                                                                    <p>Your account is connected to the following third party apps:</p>
+                                                                    <form>
+                                                                        <div style = "margin-bottom:10px;"  class="custom-control custom-switch">
+                                                                            <input type="checkbox" class="custom-control-input" id="customSwitch3" checked>
+                                                                            <label class="custom-control-label" for="customSwitch3">Twitter</label>
+                                                                            
+                                                                        </div>
+                                                                        
+                                                                        <div style = "margin-bottom:10px;" class="custom-control custom-switch">
+                                                                                <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+                                                                                <label class="custom-control-label" for="customSwitch1">Google+</label>
+                                                                        </div>
+                                                                        <div style = "margin-bottom:10px;" class="custom-control custom-switch">
+                                                                                <input type="checkbox" class="custom-control-input" id="customSwitch4" checked>
+                                                                                <label class="custom-control-label" for="customSwitch4">Facebook</label>
+                                                                        </div>
+                                                                        <div style = "margin-bottom:10px;" class="custom-control custom-switch">
+                                                                                <input type="checkbox" class="custom-control-input" id="customSwitch4" checked>
+                                                                                <label class="custom-control-label" for="customSwitch4">LinkedIn</label>
+                                                                        </div>
+                                                                    </form>
+                                                                        <div style = "padding-bottom:20px;">
+                                                                            <a href = "#"><u>Change app permissions</u></a>     
+                                                                        </div>
+                                                                        <div>
+                                                                            <a href = "#"><u>Add more apps</u></a>
+                                                                        </div>
+                                                                            
+
+                                                                        <button style = "width:100%; margin-top:20px;" type="button" class="btn btn-success">Save Settings</button>
+                                                                </div>                                            
+                                                            </div>
+                                                                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                                                                        <h4 style = "padding-bottom:10px;">Notifications </h4>
+                                                                        <p>You can change how you receive notifications from us here. Your current settings are shown below.</p>
+                                                                        <form>
+                                                                                <div style = "margin-bottom:10px;"  class="custom-control custom-switch">
+                                                                                    <input type="checkbox" class="custom-control-input" id="customSwitch5" checked>
+                                                                                    <label class="custom-control-label" for="customSwitch5">In-site notifications</label>
+                                                                                    
+                                                                                </div>
+                                                                                
+                                                                                <div style = "margin-bottom:10px;" class="custom-control custom-switch">
+                                                                                        <input type="checkbox" class="custom-control-input" id="customSwitch6">
+                                                                                        <label class="custom-control-label" for="customSwitch6">Desktop Notifications</label>
+                                                                                </div>
+                                                                                <div style = "margin-bottom:10px;" class="custom-control custom-switch">
+                                                                                        <input type="checkbox" class="custom-control-input" id="customSwitch7" checked>
+                                                                                        <label class="custom-control-label" for="customSwitch7">Email Notifications</label>
+                                                                                </div>
+                                                                                <div style = "margin-bottom:10px;" class="custom-control custom-switch">
+                                                                                        <input type="checkbox" class="custom-control-input" id="customSwitch8">
+                                                                                        <label class="custom-control-label" for="customSwitch8">Text Notifications</label>
+                                                                                </div>
+                                                                            </form>
+                                                                            <button style = "width:100%; margin-top:20px;" type="button" class="btn btn-success">Save Settings</button>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                                                                    <h4 style = "padding-bottom:10px;">Site Appearance </h4>
+                                                                    <p> You can change basic settings about the appearance of the site here.</p>
+                                                                    <form>
+                                                                        <div style = "margin-bottom:10px;"  class="custom-control custom-switch">
+                                                                            <input type="checkbox" class="custom-control-input" id="customSwitch9" checked>
+                                                                            <label class="custom-control-label" for="customSwitch10">Toggle Dark Theme</label>
+                                                                            
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                                <label for="disabledSelect">Font Size (point)</label>
+                                                                                <select id="disabledSelect" class="form-control">
+                                                                                    <option>10pt</option>
+                                                                                    <option>12pt</option>
+                                                                                    <option>14pt</option>
+                                                                                    <option>16pt</option>
+                                                                                    <option>18pt</option>
+                                                                                    <option>20pt</option>
+                                                                                </select>
+                                                                            </div>
+                                                                    </form>
+                                                                    <button style = "width:100%; margin-top:20px;" type="button" class="btn btn-success">Save Settings</button>                                                      
+                                                                </div>
+                                                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                            <p>
+                                                For websites that do not require account sign-up, an account settings page is not applicable. However, since cookies are still collected from anonymous users, they should still be presented with an opportunity to toggle their privacy settings throughout the interaction. </a>
+                                            </p>
+                                            </ol>
+                                        </div>
+                                                            
+                                            <hr>
+                                            <div id = "item-5" class = "group text-justify">
+                                                <div class = "header2">
+                                                    <h2 style = "font-weight: 500"> Avoiding Forced Actions </h2>
+                                                </div>
+                                               
+                                                <ol>
+                                                    <li style = "margin-bottom:40px;" class = "lead">
+                                                        Users must not be forced to perform non-essential, intrusive actions or relinquish non-essential data in order to complete their tasks on a website.
+                                                    </li>
+                                                   
+                                               
+                                                <p>
+                                                    Many dark patterns operate by forcing users to perform non-essential tasks, such as signing up to email correspondances or connecting social media accounts to complete their goals on a website. Of course, it is often necessary for users to perform tasks such as accepting terms and conditions or creating an account to complete <strong>some</strong> actions, but this section is concerned with coercing users into taking actions which are not instrumental to goal completion.  
+                                                </p>
+                                                <p>
+                                                        Forcing a user to complete a necessary action, such as filling out a required form in a field is not unethical, but forcing a user to connect their Google account when they purchase a product is unecessary, and can lead to a loss of privacy. Unethical forced actions usually involve the following:
+                                                </p>
+
+                                                <div class = "list-eg example-content">                       
+                                                        <p>
+                                                            <strong>Removal of granularity:</strong> options are "all or nothing", forcing the user to accept stipulations they may not want to, in order to complete their goals.
+                                                        </p>
+                                                        <p>
+                                                            <strong>Delay:</strong> The user is made aware of a necessary action right at the end of their journey, immediately before they complete their goal. This leverages the sunk cost fallacy, and unfairly pesuades them to complete the necessary action, as they have already invested time and effort into their tasks. 
+                                                        </p>
+                                                        <p>
+                                                            <strong>Unecessary Actions: </strong> The user is forced to complete an uneccesary, tangential action that may result in them relinquishing data or clicking an ad, to complete their goals.
+                                                        </p>                     
+                                                </div>
+                                                <p>
+                                                        Interventions which are aimed at obtaining consent for multiple things at the same time (using checkboxes for instance) should offer granularity and should offer a separate checkbox for each action being consented to.
+                                                        Actions should not be grouped into one checkbox, as the user may wish to consent to one action or agreement, but not the other. 
+                                                </p>
+                                                <div class="danger-alert ">
+                                                    <div style = "width:95%;"  class = "flexbox d-flex flex-row align-items-center bg-light">
+                                                        <div class="d-flex p-2">
+                                                            <i class="fas fa-exclamation-triangle fa-2x" style = "color: rgb(173, 17, 17)"></i>
+                                                        </div>
+                                                        <div style = "margin-left:5px;" class =" d-flex p-2" >
+                                                                Actions that are non-essential must not be grouped with actions that are essential - for instance, grouping the option to agree to terms and conditions with an option to receive email correspondances forces the 
+                                                                user to sign up to emails, an action which is not essential and requires explicit consent. 
+                                                        </div>     
+                                                    </div>
+                                                </div>
+
+                                                <div class = "row" style = "padding-bottom:40px; ">
+                                                    <div class = "col-6">
+                                                        <div class="card" >
+                                                            <div class = "card-body">                                       
+                                                                <p> I would like to be contacted regarding promotions, offers and discounts via:</p>                                      
+                                                                <form>
+                                                                    <div style = "padding-bottom:10px;" class="custom-control custom-checkbox">
+                                                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                                            <label class="custom-control-label" for="customCheck1">Email</label>
+                                                                    </div>
+
+                                                                    <div style = "padding-bottom:10px;" class="custom-control custom-checkbox">
+                                                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                                            <label class="custom-control-label" for="customCheck2">Phone</label>
+                                                                    </div>
+
+                                                                    <div style = "padding-bottom:10px;" class="custom-control custom-checkbox">
+                                                                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                                                            <label class="custom-control-label" for="customCheck3">Post</label>
+                                                                    </div>
+                                                                        <hr>
+                                                                    <div style = "padding-bottom:10px;" class="custom-control custom-checkbox">
+                                                                            <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                                                            <label class="custom-control-label" for="customCheck4">I accept the platform's <a href = "#">Terms and Conditions</a></label>
+                                                                    </div>
+                                                                    <div style = "padding-bottom:10px;" class="custom-control custom-checkbox">
+                                                                            <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                                                            <label class="custom-control-label" for="customCheck5">I accept the platform's <a href = "#">Privacy Policy</a></label>
+                                                                    </div>
+                                                                </form>
+                                                            </div>                                   
+                                                        </div>
+                                                        <div style = "padding-top: 20px; padding-bottom:10px; border-bottom-style:solid; border-radius:5px; border-width:5px; border-color:rgb(17, 173, 82);" class = " bottom-caption bg-light">
+                                                            <p class= "text-success">
+                                                                &nbsp; Do.
+                                                            </p> 
+                                                        </div>
+                                                    </div>
+                            
+                                                    <div class = "col-6">
+                                                        <div class="card" >
+                                                            <div class="card-body">
+                                                                <form>
+                                                                    <div style = "padding-bottom:10px;" class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" class="custom-control-input" id="customCheck7" checked>
+                                                                        <label class="custom-control-label" for="customCheck7">I would like to be contacted regarding promotions, offers and discounts via: 
+                                                                            <ul style = "padding-bottom:12px;">
+                                                                                <li>Email</li>
+                                                                                <li>Post</li>
+                                                                                <li>
+                                                                                    Telephone
+                                                                                </li>
+                                                                            </ul>
+                                                                        </label>
+                                                                    </div>
+                                                                    <hr>
+                                                                    <div style = "padding-bottom:10px; padding-top:10px;" class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" class="custom-control-input" id="customCheck8" checked>
+                                                                        <label class="custom-control-label" for="customCheck8">I accept the platform's <a href = "#">Terms and Conditions</a> <strong>and</strong> consent to my email being shared with third party advertisers.</label>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                        <div style = "padding-top: 20px; padding-bottom:10px; border-bottom-style:solid; border-radius:5px; border-width:5px; border-color:rgb(173, 17, 17);" class = " bottom-caption bg-light">
+                                                            <p class= "text-danger">
+                                                                &nbsp; Don't.
+                                                            </p> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    The first example displays a <strong>granular approach</strong> to gaining consent - each item being consented to is given its own checkbox, to allow maximum customisation. Similarly, none of the options are chosen by default as they represent important choices that the users must opt into.
+                                                </p>
+                                                <p>
+                                                    The second example is <strong> non granular </strong> - if a user only wants to be contacted by email, there is no option for them to do so, as consenting to email correspondances necessitates consenting to telephone and post as well. Similarly, the grouping of the terms and conditions with a request to share the user's email is highly unethical, as to complete their goals, they must consent to this action. This does not offer them a fair choice to not consent to having their details shared.
+                                                    The options are also checked by default, which is considered poor ethical practice.
+                                                </p>
+                                               
+                                                    <li style = " margin-top:40px; margin-bottom:40px;" class = "lead">                              
+                                                        If an action is necessary for the user to continue using the service or complete a task, the user must be made aware of this before they begin.
+                                                    </li>
+                                                </ol>
+                                                <p>
+                                                    It is equally important to maintain informativeness, and ensure that a user knows exactly what actions will be required of them before they begin using a service, such that the sunk cost fallacy is not abused. Similarly, it is good practice to inform the user of <strong>why</strong>
+                                                    an action is required of them, in the case where this is not intuitive. 
+                                                </p>
+                                                <p>
+                                                    Informing the user of why an action can be achieved very easily, by adding a 1-2 sentence long description to UI element used to prompt the action, or an inline popover button. The example below shows two approaches to designing a mandatory form field which explains textually, why the field is required.
+                                                </p>
+                                                <div class="component-alert ">
+                                                        <div class = " annotations flexbox d-flex flex-row align-items-center bg-light">
+                                                            <div class="d-flex p-2">
+                                                            <i>
+                                                                <img style = "width:75px;" src =  "../images/blogo.png">
+                                                            </i>
+                                                            </div>
+                                                            <div style = "width:90%;" class =" para d-flex p-2 text-justify">
+                                                            Bootstrap's popovers are useful for this purpose - often, excessive text clutters the page, so a clickable icon which opens a small popover containing this explanation can be a good way to add supplementary information.
+                                                                Both examples below are acceptable practice, but in cases where the information is more long-winded, a popover may be more suitable.
+                                                            </div>     
+                                                        </div>
+                                                </div>
+                                                <div class = "bd-example  d-flex justify-content-center" style = "margin-top:20px; ">
+                                                    <form style = "width:80%; padding-top:10px; padding-bottom:10px;">                              
+                                                        <div class="form-group">
+                                                            <label for="exampleInputEmail1">Phone Number <strong>&nbsp;*</strong></label>
+                                                            <small class = "text-muted"> 	&nbsp; We need your phone number in case we need to contact you quickly about your order.</small>
+                                                            <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">                                  
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class = "d-flex flex-row align-items-center ">
+                                                                <div class ="d-flex p-2 ">
+                                                                        Phone Number&nbsp;<strong>*</strong>
+                                                                </div>    
+                                                                <div class="d-flex p-2">
+                                                                    <i class="fas fa-info-circle" style = "color: rgb(151, 177, 218);"></i>
+                                                                </div> 
+                                                            </div>                                                                                           
+                                                            <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Phone Number">                                       
+                                                        </div>
+                                                    </form>    
+                                                </div>
+                                            </div>
+                            
+
+                                            <hr>
+
+                                            <div id = "item-6" class = "group text-justify">
+                                                <div  class = "header2">
+                                                    <h2 style = "font-weight: 500"> Respecting the User's Decision </h2>
+                                                </div>
+                                                <ol>
+                                                    <li style = " margin-bottom:40px;" class = "lead">
+                                                            The final decisions of user's must be respected, and they should not be manipulated or irritated into performing the action desired by the platform.
+                                                    </li>
+                                                <p>
+                                                    An important aspect of designing for user autonomy is <strong>respecting the decisions of users</strong>, and avoiding langage that is guilt or shame inducing in nature. When attempting to persuade users
+                                                    to perform a particular action, it is important that the principle of <strong>scenario realism</strong> is adhered to, and that the intervention would not be considered rude or irritating if it occurred offline.
+                                                </p>
+
+                                                <p>
+                                                    Manipulative, insulting or emotionally charged imagery or language must not be used in attempt to persuade users. This includes using unrelated photos of animals, children or any other stimulus likely to evoke an emotional response. 
+                                                </p>
+                                                <div class = "row" style = "padding-bottom:20px; margin-bottom:20px; margin-top:40px;">
+                                                    <div class = "col-6">
+                                                        <div class="card" >
+                                                            <img src = "../images/auton/noconfirm.PNG">     
+                                                        </div>
+                                                        <div style = "padding-top: 20px; padding-bottom:10px; border-bottom-style:solid; border-radius:5px; border-width:5px; border-color:rgb(17, 173, 82);" class = " bottom-caption bg-light">
+                                                            <p class= "text-success">
+                                                                    &nbsp; Do.
+                                                            </p> 
+                                                        </div>
+                                                    </div>
+
+                                                    <div class = "col-6">
+                                                        <div class="card" >                        
+                                                                <img src = "../images/intro/confirmshaming.PNG">
+                                                        </div>
+                                                        <div style = "padding-top: 20px; padding-bottom:10px; border-bottom-style:solid; border-radius:5px; border-width:5px; border-color:rgb(173, 17, 17);" class = " bottom-caption bg-light">
+                                                            <p class= "text-danger">
+                                                                &nbsp; Don't.
+                                                            </p> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    The example shown above displays two versions of the design intervention analysed in the first chapter - the rightmost version is a <em>confirmshaming</em> dark pattern and uses guilt-inducing language to steer the user
+                                                    towards signing up. The leftmost example is still persuasive, but uses the approach of <em>ethical framing</em> to achieve its persuasive effect - the intervention highlights the positive outcomes of signing up to the newsletter by using
+                                                    a call to action, rather than manipulation. 
+                                                </p>
+                                                <p>
+                                                    Similarly, the user is given information on how their data will be used, and provided with a link to the platform's privacy policy. This is considered good practice for all interventions that require the user to make a 
+                                                    decision which affects their data.
+                                                </p>
+
+                                                <li style = "margin-top:40px; margin-bottom:40px;" class = "lead">
+                                                    Popups and post-action prompts (<em>"Are you sure you want to do X?"</em>) should be used sparingly, limited to cases where it is absolutely necessary to focus the user's attention on one task, such as cookie settings management and confirmation of an irreversable action.
+                                                </li>
+                                                <p>
+                                                    Excessive advertising popups should be avoided where possible; the user should come across no more than one intrusive advertising popup over the course of using the website, and it should be <strong>internal</strong> and relevant to the user's goals - that is, it
+                                                    should not be an ad from an external website for an unrelated product or service.
+                                                </p>
+                                                <div class="danger-alert ">
+                                                    <div class = "flexbox d-flex flex-row align-items-center bg-light">
+                                                        <div class="d-flex p-2">
+                                                            <i class="fas fa-exclamation-triangle fa-2x" style = "color: rgb(173, 17, 17)"></i>
+                                                        </div>
+                                                        <div class ="annotations d-flex p-2">
+                                                                Post action prompts should not be used as a nudge to change the user's mind after they have already made a decision - they should serve the sole purpose of preventing errors in 
+                                                                contexts where an error would impede a user's goals.
+                                                        </div>     
+                                                    </div>
+                                                </div>
+
+                                                <p>
+                                                    Respecting the user's right to make their own decisions means accepting these decisions at the first instance - if a user wishes to dismiss an advertising popup, they should not be met with an <em>"Are you sure?"</em>
+                                                    prompt, as it will likely irritate the user and displays a disregard for their initial decision. Of course there are contexts where post-action prompts are useful in preventing errors, but as mentioned previously, this is limited to
+                                                    contexts where an error is likely to cause the user sufficient annoyance - users are unlikely to dismiss an advertising popup by accident and doing so will not impede their goals significantly.
+                                                </p>
+
+                                                <li style = "margin-top:40px; margin-bottom:40px;" class = "lead">
+                                                        Post-action prompts should not present new information to the user that was not availible before they acted initially - 
+                                                        users should be able to make fully informed decisions based on the initial prompt alone. 
+                                                </li>
+                                                </ol>
+                                                <p>
+                                                    This concept links very closely with transparency and the previously discussed concept of presenting necessary information to users in a timely fashion. New information that is likely to affect the user's decision should not be presented to them after
+                                                    they have made an initial decision - every detail the user needs to make an informed choice should be presented to them from the outset.
+                                                </p>
+                                            </div>
+                                        <div style = "margin-top:40px;margin-bottom:50px;" class="card-link card shadow-sm" >
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Next Chapter</h5>
+                                                    <p class="card-text text-muted">Go to the next chapter to read about how websites can be designed to protect user privacy</p>
+                                                </div>
+                                                <a  class = "stretched-link" href = "privacy.html" ></a>
+                                    
+                                        </div>
+                                    </div>
+                            </div>
+
+                        <div class = "col-3">                      
+                                <div id = "scrollspy"  style = "position:fixed; width:85%;">
+                                    <div class= "p-2" style = "margin-left:50px; font-size:12pt;">
+                                        <ol style = "list-style:none;" class = "example-content list-eg">
+                                            <li>
+                                                <a class= "text-muted" href = "#item-1">Introduction</a>
+
+                                            </li>
+                                            <li><a class= "text-muted" href = "#item-2">Informed Consent</a></li>
+                                            <li><a class= "text-muted" href = "#item-3">Informative Transparency</a></li>
+                                            <li><a class= "text-muted" href = "#item-4">Maintaining Symmetry</a></li>
+                                            <li><a class= "text-muted" href = "#item-5">Avoiding Forced Actions</a></li>
+                                            <li><a class= "text-muted" href = "#item-6">Respecting the User's Decisions</a></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+      $("#sidebar-block").load("../sidebar.html");
+
+  </script>
+</body>
+
+</html>
+
